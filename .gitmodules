@@ -37,3 +37,6 @@
 [submodule "vim/vim/bundle/ropevim"]
 	path = vim/vim/bundle/ropevim
 	url = https://github.com/sontek/rope-vim.git
+[submodule "vim/vim/autoload"]
+	path = vim/vim/autoload
+	url = https://github.com/tpope/vim-pathogen
