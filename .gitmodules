@@ -40,3 +40,6 @@
 [submodule "vim/vim/bundle/vim-taglist"]
 	path = vim/vim/bundle/vim-taglist
 	url = https://github.com/rphillips/vim-taglist.git
+[submodule "vim/vim/bundle/nerdcomments"]
+	path = vim/vim/bundle/nerdcomments
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
