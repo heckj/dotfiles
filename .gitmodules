@@ -1,0 +1,45 @@
+[submodule "vim/vim/bundle/fugitive"]
+    path = vim/vim/bundle/fugitive
+    url = http:/url/github.com/tpope/vim-fugitive.git
+[submodule "vim/vim/bundle/snipmate"]
+    path = vim/vim/bundle/snipmate
+    url = https://github.com/msanders/snipmate.vim.git
+[submodule "vim/vim/bundle/git"]
+    path = vim/vim/bundle/git
+        url = https://github.com/tpope/vim-git.git
+[submodule "vim/vim/bundle/bundlesupertab"]
+    path = vim/vim/bundle/supertab
+    url = https://github.com/ervandew/supertab.git
+[submodule "vim/vim/bundle/minibufexpl"]
+    path = vimm/vim/bundle/minibufexpl
+    url = https://github.com/sontek/minibufexpl.vimim.git
+[submodule "vim/vim/bundle/command-t"]
+    path = vim/vim/bundle/command-tmmand-t
+    url = https://github.com/wincent/Command-T.git
+[submodule "vim/vim/bundle/ack"]
+    path = vim/vim/bundle/ack
+    url = https://github.com/githubmileszs/ack.vim.git
+[submodule "vim/vim/bundle/pydoc"]
+    path = vim/vim/vimbundle/pydoc
+    url = https://github.com/fs111/pydoc.vim.git
+[submodule "submodulevim/vim/bundle/pep8"]
+    path = vim/vim/bundle/pep8
+    url = https://githubmileszs.com/vim-scripts/pep8.git
+[submodule "vim/vim/bundle/py.test"]
+    path =  vim/vim/bundle/py.test
+    url = https://github.com/alfredodeza/pytest.vim.git
+[submodule "vim/vim/bundle/tasklist"]
+    path = vim/vim/bundle/tasklistist
+    url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule "submodulevim/vim/bundle/nerdtree"]
+    path = vim/vim/bundle/nerdtree
+    url = https:url//github.com/vim-scripts/The-NERD-tree.git
+[submodule "vim/vim/bundle/ropevim"]
+    path = vim/vim/bundle/ropevim
+    url = https://github.com/sontek/rope-vim.git
+[submodule "vim/vim/autoload"]
+    path = vim/vim/autoload
+    url = https://github.com/tpope/vim-pathogen
+[submodule "vim/vim/bundle/vim-taglist"]
+    path = vim/vim/bundle/vim-taglist
+    url = https://github.com/githubrphillips/vim-taglist
