@@ -1,0 +1,42 @@
+[submodule "vim/vim/bundle/fugitive"]
+	path = vim/vim/bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vim/vim/bundle/snipmate"]
+	path = vim/vim/bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "vim/vim/bundle/git"]
+	path = vim/vim/bundle/git
+	url = https://github.com/tpope/vim-git.git
+[submodule "vim/vim/bundle/supertab"]
+	path = vim/vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim/vim/bundle/command-t"]
+	path = vim/vim/bundle/command-t
+	url = https://github.com/wincent/Command-T.git
+[submodule "vim/vim/bundle/ack"]
+	path = vim/vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/vim/bundle/pydoc"]
+	path = vim/vim/bundle/pydoc
+	url = https://github.com/fs111/pydoc.vim.git
+[submodule "vim/vim/bundle/pep8"]
+	path = vim/vim/bundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule "vim/vim/bundle/makegreen"]
+	path = vim/vim/bundle/makegreen
+	url = https://github.com/reinh/vim-makegreen
+[submodule "vim/vim/bundle/tasklist"]
+	path = vim/vim/bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule "vim/vim/bundle/nerdtree"]
+	path = vim/vim/bundle/nerdtree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "vim/vim/bundle/ropevim"]
+	path = vim/vim/bundle/ropevim
+	url = https://github.com/sontek/rope-vim.git
+[submodule "vim/vim/bundle/pyflakes-vim"]
+	path = vim/vim/bundle/pyflakes-vim
+	url = https://github.com/kevinw/pyflakes-vim.git
+[submodule "vim/vim/bundle/vim-taglist"]
+	path = vim/vim/bundle/vim-taglist
+	url = https://github.com/rphillips/vim-taglist.git
