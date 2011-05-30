@@ -8,8 +8,7 @@ set encoding=utf8
 set fileencoding=utf8
 
 
-filetype on                  " try to detect filetypes
-filetype plugin indent on    " enable loading indent file for filetype
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -45,6 +44,8 @@ set hlsearch
 "  Visual Cues
 " -----------------------------------------------------------------------------
 
+filetype on                  " try to detect filetypes
+filetype plugin indent on    " enable loading indent file for filetype
 syntax on
 colorscheme ir_black
 
