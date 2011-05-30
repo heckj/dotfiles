@@ -1,0 +1,46 @@
+8
+
+dir
+69
+http://svn.devjavu.com/termie/env/.vim
+http://svn.devjavu.com/termie
+
+
+
+2007-07-14T18:10:07.961059Z
+9
+devjavu@anarkystic.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+78c8c359-d4f4-4521-87f7-5df8ca72ce7c
+
+ftdetect
+dir
+
+doc
+dir
+
+syntax
+dir
+
+ftplugin
+dir
+
+view
+dir
+
+plugin
+dir
+
