@@ -122,6 +122,13 @@ map ,d <leader>cu
 " execute file being edited with <Shift> + e:
 map <buffer> <S-e> :w<CR>:!/usr/bin/env python % <CR>
 
+" map window movement commands
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+
 " -----------------------------------------------------------------------------
 "  Autocomplete
 " -----------------------------------------------------------------------------
