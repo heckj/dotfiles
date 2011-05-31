@@ -46,3 +46,6 @@
 [submodule "vim/vim/bundle/pydiction"]
 	path = vim/vim/bundle/pydiction
 	url = https://github.com/franciscosouza/Pydiction.git
+[submodule "vim/vim/bundle/minibufexpl"]
+	path = vim/vim/bundle/minibufexpl
+	url = https://github.com/sontek/minibufexpl.vim.git
