@@ -1,0 +1,6 @@
+Install rope and exuberant-ctags:
+
+OSX:
+
+pip install rope ropemode
+brew install ctags-exuberant
