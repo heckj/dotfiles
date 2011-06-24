@@ -101,5 +101,6 @@ export GOOS=darwin
 export GOARCH=amd64
 export GOBIN=/Users/devcamcar/bin
 export PIP_RESPECT_VIRTUALENV=true
+export ARCHFLAGS="-arch i386 -arch x86_64"
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
