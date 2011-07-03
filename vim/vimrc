@@ -3,7 +3,7 @@
 " -----------------------------------------------------------------------------
 
 set nocompatible
-set history=100
+set history=500
 set encoding=utf8
 set fileencoding=utf8
 
@@ -67,6 +67,12 @@ set softtabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+
+" -----------------------------------------------------------------------------
+"  Custom Text Formatting
+" -----------------------------------------------------------------------------
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
+au BufRead,BufNewFile fabfile set filetype=python
 
 
 " -----------------------------------------------------------------------------
