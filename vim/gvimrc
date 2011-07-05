@@ -80,4 +80,4 @@ set visualbell
 nnoremap <special> <D-n> :!open -a gvim<CR><CR>
 
 set transparency=2
-set gfn=Inconsolata:h18
+set gfn=Inconsolata:h13
