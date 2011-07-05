@@ -8,7 +8,7 @@ if [ `uname -s` == "Linux" ]; then
         sudo apt-get install vim-gnome exuberant-ctags awk
     fi
 elif [ `uname -s` == "Darwin" ]; then
-    sudo brew install ctags
+    sudo brew install ctags ack
 else
     echo Unknown environment.
     exit
