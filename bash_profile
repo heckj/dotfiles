@@ -97,8 +97,10 @@ export MANPATH=$MANPATH:/opt/local/share/man
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 export PIP_RESPECT_VIRTUALENV=true
 export ARCHFLAGS="-arch i386 -arch x86_64"
-alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+if [ -s /usr/local/bin/mvim ]; then
+    alias vi=/usr/local/bin/mvim
+    alias vim=/usr/local/bin/mvim
+fi
 
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
