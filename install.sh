@@ -5,7 +5,7 @@ if [ `uname -s` == "Linux" ]; then
     if grep -q "Ubuntu" /etc/issue; then
         ENVSETUPENV="Ubuntu"
         # go ahead and install a vim with everything compiled in
-        sudo apt-get install vim-gnome exuberant-ctags awk
+        sudo apt-get install vim-gnome exuberant-ctags ack
     fi
 elif [ `uname -s` == "Darwin" ]; then
     sudo brew install ctags ack
@@ -14,8 +14,12 @@ else
     exit
 fi
 
+# Install python dependencies
 sudo pip install pep8 pyflakes
 
+# Initialize and pull git submodules
+git submodule init
+git submodule update
 
 rm -rf $HOME/.vim $HOME/.vimrc $HOME/.gvimrc
 rm -rf $HOME/.screenrc
