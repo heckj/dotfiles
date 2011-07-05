@@ -6,12 +6,9 @@ if [ `uname -s` == "Linux" ]; then
         ENVSETUPENV="Ubuntu"
         # go ahead and install a vim with everything compiled in
         sudo apt-get install vim-gnome exuberant-ctags awk
-    elif
-        echo Unknown environment.
-        exit
     fi
 elif [ `uname -s` == "Darwin" ]; then
-    sudo brew install exuberant-ctags awk
+    sudo brew install ctags
 else
     echo Unknown environment.
     exit
