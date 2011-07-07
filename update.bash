@@ -6,11 +6,18 @@ echo " ======================================= "
 
 echo " ------------------------------------------------------------------ "
 echo "src/dotfiles"
-cd ~/src/dotfiles
-git remote -v
-git status
-git pull origin master
-git pull devcamcar master
+if [ -d ~/src/dotfiles/.git ]; then
+  cd ~/src/dotfiles
+  git remote -v
+  git status
+  git pull origin master
+  git pull devcamcar master
+else
+  cd ~/src
+  git clone git@github.com:heckj/dotfiles.git
+  cd dotfiles
+  git remote add devcamcar git@github.com:devcamcar/dotfiles.git
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "src/deployscripts"
