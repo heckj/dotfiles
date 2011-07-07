@@ -20,6 +20,11 @@ sudo pip install pep8 pyflakes
 # Initialize and pull git submodules
 git submodule init
 git submodule update
+# Initialize the submodules in pyflakes
+pushd vim/vim/bundle/pyflakes-vim
+git submodule init
+git submodule update
+popd
 
 rm -rf $HOME/.vim $HOME/.vimrc $HOME/.gvimrc
 rm -rf $HOME/.screenrc
