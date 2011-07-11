@@ -21,39 +21,66 @@ fi
 
 echo " ------------------------------------------------------------------ "
 echo "src/deployscripts"
-cd ~/src/deployscripts
-git remote -v
-git status
-git pull cloudbuilders master
-git pull
+if [ -d ~/src/deployscripts/.git ]; then
+  cd ~/src/deployscripts
+  git remote -v
+  git status
+  git pull cloudbuilders master
+  git pull
+else
+  cd ~/src
+  git clone git@github.com:4P/deployscripts.git
+  cd deployscripts
+  git remote add cloudbuilders git://github.com/cloudbuilders/deploy.sh.git
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "src/ops"
-cd ~/src/ops
-git remote -v
-git status
-git pull
+if [ -d ~/src/ops/.git ]; then
+  cd ~/src/ops
+  git remote -v
+  git status
+  git pull
+else
+  cd ~/src
+  git clone git@github.com:4P/ops.git
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "src/sous"
-cd ~/src/sous
-git remote -v
-git status
-git pull
+if [ -d ~/src/sous/.git ]; then
+  cd ~/src/sous
+  git remote -v
+  git status
+  git pull
+else
+  cd ~/src
+  git clone git@github.com:4P/sous.git
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "src/opencompute"
-cd ~/src/opencompute
-git remote -v
-git status
-git pull
+if [ -d ~/src/opencompute/.git ]; then
+  cd ~/src/opencompute
+  git remote -v
+  git status
+  git pull
+else
+  cd ~/src
+  git clone git@github.com:4P/opencompute.git
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "src/openstack-dashboard"
-cd ~/src/openstack-dashboard
-git remote -v
-git status
-git pull origin master
+if [ -d ~/src/open/stack-dashboard.git ]; then
+  cd ~/src/openstack-dashboard
+  git remote -v
+  git status
+  git pull origin master
+else
+  cd ~/src
+  git clone git@github.com:4P/openstack-dashboard.git
+fi
 
 echo " ======================================= "
 echo "            GITHUB (related)             "
@@ -84,11 +111,16 @@ else
 fi
 
 echo " ------------------------------------------------------------------ "
-echo "src/openstack-benchmarks"
-cd ~/src/openstack-benchmarks
-git remote -v
-git status
-git pull origin master
+echo "src/benchmarker"
+if [ -d ~/src/benchmarker/.git ]; then
+  cd ~/src/benchmarker
+  git remote -v
+  git status
+  git pull origin master
+else
+  cd ~/src
+  git clone git@github.com:heckj/benchmarker.git
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "src/keystone"
@@ -246,7 +278,7 @@ fi
 echo " ------------------------------------------------------------------ "
 echo "src/glance-trunk"
 if [ -d ~/src/glance-trunk/.bzr ]; then
-  cd ~/src/glance
+  cd ~/src/glance-trunk
   bzr pull
 else
   cd ~/src
