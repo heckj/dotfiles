@@ -123,54 +123,104 @@ else
 fi
 
 echo " ------------------------------------------------------------------ "
-echo "src/keystone"
-cd ~/src/keystone
-git remote -v
-git status
-git pull origin master
+NAME=keystone
+echo "src/$NAME"
+if [ -d ~/src/$NAME/.git ]; then
+  cd ~/src/$NAME
+  git remote -v
+  git status
+  git pull origin master
+else
+  cd ~/src
+  git clone https://github.com/rackspace/keystone.git $NAME
+fi
 
 echo " ------------------------------------------------------------------ "
-echo "src/openstack.compute"
-cd ~/src/openstack.compute
-git remote -v
-git status
-git pull origin master
-git pull cloudbuilders master
+NAME=openstack.compute
+echo "src/$NAME"
+if [ -d ~/src/$NAME/.git ]; then
+  cd ~/src/$NAME
+  git remote -v
+  git status
+  git pull origin master
+  git pull cloudbuilders master
+else
+  cd ~/src
+  git clone https://github.com/jacobian/openstack.compute.git $NAME
+  git remote add cloudbuilders https://github.com/cloudbuilders/openstack.compute.git
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "py-statsd"
-cd ~/src/py-statsd
-git remote -v
-git status
-git pull
+NAME=py-statsd
+echo "src/$NAME"
+if [ -d ~/src/$NAME/.git ]; then
+  cd ~/src/$NAME
+  git remote -v
+  git status
+  git pull origin master
+else
+  cd ~/src
+  git clone git@github.com:heckj/py-statsd.git $NAME
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "celery"
-cd ~/src/celery
-git remote -v
-git status
-git pull
+NAME=celery
+echo "src/$NAME"
+if [ -d ~/src/$NAME/.git ]; then
+  cd ~/src/$NAME
+  git remote -v
+  git status
+  git pull origin master
+else
+  cd ~/src
+  git clone git://github.com/ask/celery.git $NAME
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "kombu"
-cd ~/src/kombu
-git remote -v
-git status
-git pull
+NAME=kombu
+echo "src/$NAME"
+if [ -d ~/src/$NAME/.git ]; then
+  cd ~/src/$NAME
+  git remote -v
+  git status
+  git pull origin master
+else
+  cd ~/src
+  git clone https://github.com/ask/kombu.git $NAME
+fi
 
 echo " ------------------------------------------------------------------ "
-echo "src/git-cl"
-cd ~/src/git-cl
-git remote -v
-git status
-git pull
+echo "git-cl"
+NAME=git-cl
+echo "src/$NAME"
+if [ -d ~/src/$NAME/.git ]; then
+  cd ~/src/$NAME
+  git remote -v
+  git status
+  git pull origin master
+else
+  cd ~/src
+  git clone https://github.com/martine/git-cl.git $NAME
+fi
 
 echo " ------------------------------------------------------------------ "
 echo "src/keepalived"
-cd ~/src/keepalived
-git remote -v
-git status
-git pull origin master
+NAME=keepalived
+echo "src/$NAME"
+if [ -d ~/src/$NAME/.git ]; then
+  cd ~/src/$NAME
+  git remote -v
+  git status
+  git pull origin master
+  git pull github master
+else
+  cd ~/src
+  git clone http://master.formilux.org/git/people/alex/keepalived.git/ $NAME
+  git remote add github git@github.com:heckj/keepalived.git
+fi
 
 echo " ======================================= "
 echo "          GITHUB (chef cookbooks)        "
