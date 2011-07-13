@@ -49,3 +49,6 @@
 [submodule "vim/vim/bundle/minibufexpl"]
 	path = vim/vim/bundle/minibufexpl
 	url = https://github.com/sontek/minibufexpl.vim.git
+[submodule "vim/vim/bundle/vim-markdown"]
+	path = vim/vim/bundle/vim-markdown
+	url = https://github.com/hallison/vim-markdown.git
