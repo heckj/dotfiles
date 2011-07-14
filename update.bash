@@ -71,7 +71,6 @@ else
 fi
 
 git_clone_or_pull ops git@github.com:4P/ops.git
-git_clone_or_pull tools git@github.com:4P/tools.git
 git_clone_or_pull sous git@github.com:4P/sous.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
 git_clone_or_pull public-www git@github.com:4P/public-www.git
