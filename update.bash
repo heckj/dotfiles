@@ -167,4 +167,4 @@ git_update rackspace-ios
 git_update ioctocat
 git_update iTerm2
 git_update stsh-client
-
+git_update ludus
