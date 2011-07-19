@@ -18,11 +18,7 @@ fi
 sudo pip install pep8 pyflakes
 
 # Initialize and pull git submodules
-git submodule init
-git submodule update
-# Initialize the submodules recursively
-git submodule foreach --recursive git submodule init
-git submodule foreach --recursive git submodule init
+git submodule update --init --recursive
 
 rm -rf $HOME/.vim $HOME/.vimrc $HOME/.gvimrc
 rm -rf $HOME/.screenrc
