@@ -77,6 +77,7 @@ git_clone_or_pull public-www git@github.com:4P/public-www.git
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull openstack-dashboard git@github.com:4P/openstack-dashboard.git
+git_clone_or_pull crowbar git@github.com:heckj/crowbar.git
 
 echo " ======================================= "
 echo "            GITHUB (related)             "
