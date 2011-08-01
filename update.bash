@@ -92,6 +92,7 @@ git_clone_or_pull celery git://github.com/ask/celery.git
 git_clone_or_pull kombu https://github.com/ask/kombu.git
 git_clone_or_pull git-cl https://github.com/martine/git-cl.git
 git_clone_or_pull kokki git://github.com/samuel/kokki
+git_clone_or_pull zookeeper https://github.com/apache/zookeeper.git
 
 echo " ------------------------------------------------------------------ "
 NAME=openstack.compute
