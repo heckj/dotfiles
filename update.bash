@@ -83,10 +83,12 @@ echo " ======================================= "
 echo "            GITHUB (related)             "
 echo " ======================================= "
 
+git_clone_or_pull keystone https://github.com/openstack/keystone.git
+git_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
+
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
 git_clone_or_pull cobbler git://git.fedorahosted.org/cobbler
 git_clone_or_pull benchmarker git@github.com:heckj/benchmarker.git
-git_clone_or_pull keystone https://github.com/rackspace/keystone.git
 git_clone_or_pull py-statsd git@github.com:heckj/py-statsd.git
 git_clone_or_pull celery git://github.com/ask/celery.git
 git_clone_or_pull kombu https://github.com/ask/kombu.git
@@ -153,7 +155,6 @@ bzr_clone_or_pull glance-trunk lp:glance
 bzr_clone_or_pull swift-trunk lp:swift
 bzr_clone_or_pull nova-trunk lp:nova
 bzr_clone_or_pull openstack-manuals lp:openstack-manuals
-bzr_clone_or_pull openstack-ci lp:openstack-ci
 
 echo " ================================= "
 echo "         BZR (related)             "
