@@ -88,7 +88,6 @@ else
 fi
 
 git_clone_or_pull ops git@github.com:4P/ops.git
-git_clone_or_pull sous git@github.com:4P/sous.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
 git_clone_or_pull public-www git@github.com:4P/public-www.git
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
@@ -103,7 +102,7 @@ echo " ======================================= "
 gerrit_clone_or_pull keystone https://github.com/openstack/keystone.git
 gerrit_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
 gerrit_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
-
+git_clone_or_pull lettuce https://github.com/gabrielfalcao/lettuce.git
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
 git_clone_or_pull cobbler git://git.fedorahosted.org/cobbler
 git_clone_or_pull benchmarker git@github.com:heckj/benchmarker.git
