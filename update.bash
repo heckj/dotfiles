@@ -24,6 +24,23 @@ function git_clone_or_pull {
   fi
 }
 
+function gerrit_clone_or_pull {
+  echo " ------------------------------------------------------------------ "
+  echo "src/$1"
+  if [ -d ~/src/$1/.git ]; then
+    cd ~/src/$1
+    git remote -v
+    git status
+    git pull
+  else
+    cd ~/src
+    git clone $2 $1
+    cd $1
+    scp -p -P 29418 $USERNAME@review.openstack.org:hooks/commit-msg .git/hooks/
+    git remote add gerrit ssh://$USERNAME@review.openstack.org:29418/openstack/$1.git
+  fi
+}
+
 function bzr_clone_or_pull {
   echo " ------------------------------------------------------------------ "
   echo "src/$1"
@@ -83,8 +100,9 @@ echo " ======================================= "
 echo "            GITHUB (related)             "
 echo " ======================================= "
 
-git_clone_or_pull keystone https://github.com/openstack/keystone.git
-git_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
+gerrit_clone_or_pull keystone https://github.com/openstack/keystone.git
+gerrit_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
+gerrit_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
 
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
 git_clone_or_pull cobbler git://git.fedorahosted.org/cobbler
