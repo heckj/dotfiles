@@ -148,20 +148,6 @@ fi
 
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
 
-echo " ======================================= "
-echo "          GITHUB (chef cookbooks)        "
-echo " ======================================= "
-
-git_update knife-openstack
-git_update chef-repo
-git_update openstack-cookbooks
-git_update openstack-nova
-git_update openstack-swift
-git_update ansolabs-openstack-cookbooks
-git_update mattray-openstack-cookbooks
-git_update puppetlabs-nova
-git_update OpenStack-NOVA-Installer-Script
-
 echo " ================================= "
 echo "         BZR (OpenStack)           "
 echo " ================================= "
