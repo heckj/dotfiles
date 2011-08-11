@@ -94,7 +94,6 @@ git_clone_or_pull public-www git@github.com:4P/public-www.git
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull openstack-dashboard git@github.com:4P/openstack-dashboard.git
-git_clone_or_pull crowbar git@github.com:heckj/crowbar.git
 
 echo " ======================================= "
 echo "            GITHUB (related)             "
@@ -114,6 +113,8 @@ git_clone_or_pull git-cl https://github.com/martine/git-cl.git
 git_clone_or_pull kokki git://github.com/samuel/kokki
 git_clone_or_pull zookeeper https://github.com/apache/zookeeper.git
 git_clone_or_pull djeep https://github.com/cloudbuilders/djeep.git
+git_clone_or_pull crowbar git@github.com:heckj/crowbar.git
+git_clone_or_pull fabric git@github.com:fabric/fabric.git
 
 echo " ------------------------------------------------------------------ "
 NAME=openstack.compute
@@ -160,6 +161,9 @@ bzr_clone_or_pull glance-trunk lp:glance
 bzr_clone_or_pull swift-trunk lp:swift
 bzr_clone_or_pull nova-trunk lp:nova
 bzr_clone_or_pull openstack-manuals lp:openstack-manuals
+bzr_clone_or_pull openstack-ubuntu-packagers-nova lp:~openstack-ubuntu-packagers/nova/ubuntu
+bzr_clone_or_pull openstack-ubuntu-packagers-glance lp:~openstack-ubuntu-packagers/glance/ubuntu
+bzr_clone_or_pull openstack-ubuntu-packagers-swift lp:~openstack-ubuntu-packagers/swift/ubuntu
 
 echo " ================================= "
 echo "         BZR (related)             "
