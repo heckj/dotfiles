@@ -9,8 +9,6 @@
 [user]
     name = Joe Heck
     email = heckj@mac.com
-[apply]
-    whitespace = nowarn
 [alias]
     ci = commit
     st = status
