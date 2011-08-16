@@ -115,6 +115,8 @@ git_clone_or_pull zookeeper https://github.com/apache/zookeeper.git
 git_clone_or_pull djeep https://github.com/cloudbuilders/djeep.git
 git_clone_or_pull crowbar git@github.com:heckj/crowbar.git
 git_clone_or_pull fabric git@github.com:fabric/fabric.git
+git_clone_or_pull kong https://github.com/cloudbuilders/kong.git
+git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
 
 echo " ------------------------------------------------------------------ "
 NAME=openstack.compute
