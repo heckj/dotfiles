@@ -183,3 +183,4 @@ git_update ioctocat
 git_update iTerm2
 git_update stsh-client
 git_update ludus
+git_update boardtest
