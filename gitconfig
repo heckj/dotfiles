@@ -7,7 +7,7 @@
 [gc]
     auto = 1
 [user]
-    name = Joe Heck
+	name = Joe Heck
     email = heckj@mac.com
 [alias]
     ci = commit
