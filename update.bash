@@ -102,6 +102,7 @@ echo " ======================================= "
 gerrit_clone_or_pull keystone https://github.com/openstack/keystone.git
 gerrit_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
 gerrit_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
+git_clone_or_pull openstack-skeleton https://github.com/openstack/openstack-skeleton.git
 git_clone_or_pull lettuce https://github.com/gabrielfalcao/lettuce.git
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
 git_clone_or_pull cobbler git://git.fedorahosted.org/cobbler
