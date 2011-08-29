@@ -6,7 +6,7 @@ set nocompatible
 set history=500
 set encoding=utf8
 set fileencoding=utf8
-
+set colorcolumn=80
 
 filetype off
 call pathogen#runtime_append_all_bundles()
