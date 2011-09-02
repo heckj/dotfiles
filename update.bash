@@ -180,7 +180,7 @@ echo " ================================= "
 echo "            IOS & MAC              "
 echo " ================================= "
 
-git_update rackspace-ios
+git_clone_or_pull rackspace-ios https://github.com/rackspace/rackspace-ios.git
 git_update ioctocat
 git_update iTerm2
 git_update stsh-client
