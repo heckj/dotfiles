@@ -105,6 +105,14 @@ gerrit_clone_or_pull keystone https://github.com/openstack/keystone.git
 gerrit_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
 gerrit_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
 git_clone_or_pull openstack-skeleton https://github.com/openstack/openstack-skeleton.git
+gerrit_clone_or_pull swift https://github.com/openstack/swift.git
+gerrit_clone_or_pull glance https://github.com/openstack/glance.git
+gerrit_clone_or_pull openstack-integration-tests https://github.com/openstack/openstack-integration-tests.git
+
+gerrit_clone_or_pull object-api https://github.com/openstack/object-api.git
+gerrit_clone_or_pull image-api https://github.com/openstack/image-api.git
+gerrit_clone_or_pull identity-api https://github.com/openstack/identity-api.git
+
 git_clone_or_pull lettuce https://github.com/gabrielfalcao/lettuce.git
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
 git_clone_or_pull cobbler git://git.fedorahosted.org/cobbler
@@ -159,11 +167,7 @@ echo "         BZR (OpenStack)           "
 echo " ================================= "
 
 bzr_clone_or_pull nova-milestone lp:~hudson-openstack/nova/milestone-proposed
-bzr_clone_or_pull swift-milestone lp:~hudson-openstack/swift/milestone-proposed
-bzr_clone_or_pull glance-milestone lp:~hudson-openstack/glance/milestone-proposed
 
-bzr_clone_or_pull glance-trunk lp:glance
-bzr_clone_or_pull swift-trunk lp:swift
 bzr_clone_or_pull nova-trunk lp:nova
 bzr_clone_or_pull openstack-manuals lp:openstack-manuals
 bzr_clone_or_pull openstack-ubuntu-packagers-nova lp:~openstack-ubuntu-packagers/nova/ubuntu
