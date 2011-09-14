@@ -179,7 +179,7 @@ echo "         BZR (related)             "
 echo " ================================= "
 
 bzr_clone_or_pull graphite lp:graphite
-bzr_clone_or_pull ensemble lp:ensemble
+bzr_clone_or_pull juju lp:juju
 
 echo " ================================= "
 echo "            IOS & MAC              "
