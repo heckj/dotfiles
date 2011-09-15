@@ -128,6 +128,7 @@ git_clone_or_pull crowbar git@github.com:heckj/crowbar.git
 git_clone_or_pull fabric git@github.com:fabric/fabric.git
 git_clone_or_pull kong https://github.com/cloudbuilders/kong.git
 git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
+git_clone_or_pull devstack https://github.com/cloudbuilders/devstack.git
 
 echo " ------------------------------------------------------------------ "
 NAME=openstack.compute
