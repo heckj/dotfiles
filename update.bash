@@ -73,18 +73,18 @@ else
 fi
 
 echo " ------------------------------------------------------------------ "
-echo "src/deployscripts"
-if [ -d ~/src/deployscripts/.git ]; then
-  cd ~/src/deployscripts
+echo "src/devstack"
+if [ -d ~/src/devstack/.git ]; then
+  cd ~/src/devstack
   git remote -v
   git status
   git pull cloudbuilders master
   git pull
 else
   cd ~/src
-  git clone git@github.com:4P/deployscripts.git
-  cd deployscripts
-  git remote add cloudbuilders git://github.com/cloudbuilders/deploy.sh.git
+  git clone git@github.com:4P/devstack.git
+  cd devstack
+  git remote add cloudbuilders git://github.com/cloudbuilders/devstack.git
 fi
 
 git_clone_or_pull ops git@github.com:4P/ops.git
@@ -128,7 +128,6 @@ git_clone_or_pull crowbar git@github.com:heckj/crowbar.git
 git_clone_or_pull fabric git@github.com:fabric/fabric.git
 git_clone_or_pull kong https://github.com/cloudbuilders/kong.git
 git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
-git_clone_or_pull devstack https://github.com/cloudbuilders/devstack.git
 
 echo " ------------------------------------------------------------------ "
 NAME=openstack.compute
