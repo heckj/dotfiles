@@ -129,6 +129,8 @@ git_clone_or_pull fabric git@github.com:fabric/fabric.git
 git_clone_or_pull kong https://github.com/cloudbuilders/kong.git
 git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
 
+git_clone_or_pull mongo-python-driver https://github.com/mongodb/mongo-python-driver.git
+
 echo " ------------------------------------------------------------------ "
 NAME=openstack.compute
 echo "src/$NAME"
