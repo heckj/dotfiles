@@ -105,8 +105,10 @@ gerrit_clone_or_pull keystone https://github.com/openstack/keystone.git
 gerrit_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
 gerrit_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
 git_clone_or_pull openstack-skeleton https://github.com/openstack/openstack-skeleton.git
+gerrit_clone_or_pull nova https://github.com/openstack/nova.git
 gerrit_clone_or_pull swift https://github.com/openstack/swift.git
 gerrit_clone_or_pull glance https://github.com/openstack/glance.git
+gerrit_clone_or_pull quantum https://github.com/openstack/quantum.git
 gerrit_clone_or_pull openstack-integration-tests https://github.com/openstack/openstack-integration-tests.git
 
 gerrit_clone_or_pull object-api https://github.com/openstack/object-api.git
@@ -168,9 +170,6 @@ echo " ================================= "
 echo "         BZR (OpenStack)           "
 echo " ================================= "
 
-bzr_clone_or_pull nova-milestone lp:~hudson-openstack/nova/milestone-proposed
-
-bzr_clone_or_pull nova-trunk lp:nova
 bzr_clone_or_pull openstack-manuals lp:openstack-manuals
 bzr_clone_or_pull openstack-ubuntu-packagers-nova lp:~openstack-ubuntu-packagers/nova/ubuntu
 bzr_clone_or_pull openstack-ubuntu-packagers-glance lp:~openstack-ubuntu-packagers/glance/ubuntu
