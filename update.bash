@@ -111,9 +111,11 @@ gerrit_clone_or_pull glance https://github.com/openstack/glance.git
 gerrit_clone_or_pull quantum https://github.com/openstack/quantum.git
 gerrit_clone_or_pull openstack-integration-tests https://github.com/openstack/openstack-integration-tests.git
 
+gerrit_clone_or_pull compute-api https://github.com/openstack/compute-api.git
 gerrit_clone_or_pull object-api https://github.com/openstack/object-api.git
 gerrit_clone_or_pull image-api https://github.com/openstack/image-api.git
 gerrit_clone_or_pull identity-api https://github.com/openstack/identity-api.git
+gerrit_clone_or_pull openstack-manuals https://github.com/openstack/openstack-manuals.git
 
 git_clone_or_pull lettuce https://github.com/gabrielfalcao/lettuce.git
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
@@ -170,7 +172,6 @@ echo " ================================= "
 echo "         BZR (OpenStack)           "
 echo " ================================= "
 
-bzr_clone_or_pull openstack-manuals lp:openstack-manuals
 bzr_clone_or_pull openstack-ubuntu-packagers-nova lp:~openstack-ubuntu-packagers/nova/ubuntu
 bzr_clone_or_pull openstack-ubuntu-packagers-glance lp:~openstack-ubuntu-packagers/glance/ubuntu
 bzr_clone_or_pull openstack-ubuntu-packagers-swift lp:~openstack-ubuntu-packagers/swift/ubuntu
