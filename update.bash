@@ -72,21 +72,6 @@ else
   git remote add devcamcar git@github.com:devcamcar/dotfiles.git
 fi
 
-echo " ------------------------------------------------------------------ "
-echo "src/devstack"
-if [ -d ~/src/devstack/.git ]; then
-  cd ~/src/devstack
-  git remote -v
-  git status
-  git pull cloudbuilders master
-  git pull
-else
-  cd ~/src
-  git clone git@github.com:4P/devstack.git
-  cd devstack
-  git remote add cloudbuilders git://github.com/cloudbuilders/devstack.git
-fi
-
 git_clone_or_pull ops git@github.com:4P/ops.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
 git_clone_or_pull ipxe git@github.com:4P/ipxe.git
@@ -98,6 +83,7 @@ git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull openstack-dashboard git@github.com:4P/openstack-dashboard.git
 git_clone_or_pull controller git@github.com:4P/controller.git
 git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
+git_clone_or_pull devstack https://github.com/cloudbuilders/devstack.git
 
 echo " ======================================= "
 echo "            GITHUB (related)             "
