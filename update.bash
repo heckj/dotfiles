@@ -80,7 +80,7 @@ git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull public-www git@github.com:4P/public-www.git
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
-git_clone_or_pull openstack-dashboard git@github.com:4P/openstack-dashboard.git
+git_clone_or_pull horizon git@github.com:4P/horizon.git
 git_clone_or_pull controller git@github.com:4P/controller.git
 git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
 git_clone_or_pull devstack https://github.com/cloudbuilders/devstack.git
