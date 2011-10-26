@@ -84,6 +84,7 @@ git_clone_or_pull horizon git@github.com:4P/horizon.git
 git_clone_or_pull controller git@github.com:4P/controller.git
 git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
 git_clone_or_pull devstack https://github.com/cloudbuilders/devstack.git
+git_clone_or_pull keystonelight https://github.com/termie/keystonelight.git
 
 echo " ======================================= "
 echo "            GITHUB (related)             "
