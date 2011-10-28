@@ -80,7 +80,6 @@ git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull public-www git@github.com:4P/public-www.git
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
-git_clone_or_pull horizon git@github.com:4P/horizon.git
 git_clone_or_pull controller git@github.com:4P/controller.git
 git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
 git_clone_or_pull devstack https://github.com/cloudbuilders/devstack.git
@@ -99,6 +98,7 @@ gerrit_clone_or_pull swift https://github.com/openstack/swift.git
 gerrit_clone_or_pull glance https://github.com/openstack/glance.git
 gerrit_clone_or_pull quantum https://github.com/openstack/quantum.git
 gerrit_clone_or_pull openstack-integration-tests https://github.com/openstack/openstack-integration-tests.git
+gerrit_clone_or_pull horizon git@github.com/openstack/horizon.git
 
 gerrit_clone_or_pull compute-api https://github.com/openstack/compute-api.git
 gerrit_clone_or_pull object-api https://github.com/openstack/object-api.git
