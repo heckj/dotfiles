@@ -1,4 +1,7 @@
 #!/bin/bash
+
+export USERNAME=$USER
+
 function git_update {
   if [ -d ~/src/$1/.git ]; then
     echo " ------------------------------------------------------------------ "
@@ -81,7 +84,7 @@ git_clone_or_pull swift https://github.com/openstack/swift.git
 git_clone_or_pull glance https://github.com/openstack/glance.git
 git_clone_or_pull quantum https://github.com/openstack/quantum.git
 git_clone_or_pull openstack-integration-tests https://github.com/openstack/openstack-integration-tests.git
-git_clone_or_pull horizon git@github.com/openstack/horizon.git
+git_clone_or_pull horizon https://github.com/openstack/horizon.git
 
 git_clone_or_pull compute-api https://github.com/openstack/compute-api.git
 git_clone_or_pull object-api https://github.com/openstack/object-api.git
