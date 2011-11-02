@@ -158,6 +158,7 @@ echo " ================================= "
 
 bzr_clone_or_pull graphite lp:graphite
 bzr_clone_or_pull juju lp:juju
+bzr_clone_or_pull charm-tools lp:charm-tools
 
 echo " ================================= "
 echo "            IOS & MAC              "
