@@ -60,7 +60,7 @@
     ignore = dirty
 [submodule "vim/vim/bundle/pydiction"]
     path = vim/vim/bundle/pydiction
-    url = https://github.com/franciscosouza/Pydiction.git
+    url = https://github.com/vim-scripts/Pydiction.git
     ignore = dirty
 [submodule "vim/vim/bundle/minibufexpl"]
     path = vim/vim/bundle/minibufexpl
