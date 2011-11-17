@@ -25,6 +25,7 @@ rm -rf $HOME/.screenrc
 rm -rf $HOME/.bash_profile
 rm -rf $HOME/.bashrc
 rm -rf $HOME/.gitconfig
+rm -rf $HOME/.pylintrc
 rm     $HOME/update.bash
 
 ln -s `pwd`/vim/vim $HOME/.vim
@@ -35,5 +36,6 @@ ln -s `pwd`/bash_profile $HOME/.bash_profile
 ln -s `pwd`/bashrc $HOME/.bashrc
 ln -s `pwd`/gitconfig $HOME/.gitconfig
 ln -s `pwd`/update.bash $HOME/update.bash
+ln -s `pwd`/pylintrc $HOME/.pylintrc
 
 
