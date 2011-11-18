@@ -68,8 +68,9 @@ git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull controller git@github.com:4P/controller.git
 git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
-git_clone_or_pull devstack https://github.com/cloudbuilders/devstack.git
+git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
 git_clone_or_pull keystonelight https://github.com/termie/keystonelight.git
+git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
 git_clone_or_pull python-keystoneclient https://github.com/4P/python-keystoneclient
 
 echo " ======================================= "
