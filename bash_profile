@@ -1,3 +1,6 @@
+# increase number of open file handles allowed - 256 default
+ulimit -n 1024
+
 # If not running interactively, don't do anything.
 [ -z "$PS1" ] && return
 
