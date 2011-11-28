@@ -100,5 +100,10 @@ export ARCHFLAGS="-arch i386 -arch x86_64"
 alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
+# Enable git command line completion.
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+. /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
