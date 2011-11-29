@@ -106,5 +106,10 @@ if [ -s /usr/local/bin/mvim ]; then
     alias vim=/usr/local/bin/mvim
 fi
 
+# Enable git command line completion.
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+. /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
