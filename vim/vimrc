@@ -183,7 +183,7 @@ map <leader>r :RopeRename<CR>
 
 nmap <leader>a <Esc>:Ack!
 " override command with ignore directories added
-let g:ackprg="ack -H --nocolor --nogroup --column --ignore-dir=.dashboard-venv --ignore-dir=.maestro-venv"
+let g:ackprg="ack-grep -H --nocolor --nogroup --column --ignore-dir=.dashboard-venv --ignore-dir=.maestro-venv"
 
 
 " -----------------------------------------------------------------------------
