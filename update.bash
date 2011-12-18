@@ -86,7 +86,7 @@ git_clone_or_pull nova https://github.com/openstack/nova.git
 git_clone_or_pull swift https://github.com/openstack/swift.git
 git_clone_or_pull glance https://github.com/openstack/glance.git
 git_clone_or_pull quantum https://github.com/openstack/quantum.git
-git_clone_or_pull openstack-integration-tests https://github.com/openstack/openstack-integration-tests.git
+git_clone_or_pull tempest https://github.com/openstack/tempest.git
 git_clone_or_pull horizon https://github.com/openstack/horizon.git
 
 git_clone_or_pull compute-api https://github.com/openstack/compute-api.git
