@@ -66,6 +66,7 @@ git_clone_or_pull lcd git@github.com:4P/lcd.git
 git_clone_or_pull arista git@github.com:4P/arista.git
 git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull public-www git@github.com:4P/public-www.git
+git_clone_or_pull python-keystoneclient git@github.com:4P/python-keystoneclient
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull controller git@github.com:4P/controller.git
@@ -73,7 +74,6 @@ git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
 git_clone_or_pull keystonelight https://github.com/4P/keystonelight.git
 git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
-git_clone_or_pull python-keystoneclient https://github.com/4P/python-keystoneclient
 git_clone_or_pull api-site-mock git@github.com:heckj/api-site-mock.git
 
 echo " ======================================= "
