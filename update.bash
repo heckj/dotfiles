@@ -107,6 +107,8 @@ git_clone_or_pull kombu https://github.com/ask/kombu.git
 git_clone_or_pull git-cl https://github.com/martine/git-cl.git
 git_clone_or_pull kokki git://github.com/samuel/kokki
 git_clone_or_pull zookeeper https://github.com/apache/zookeeper.git
+git_clone_or_pull pyzk-recipes https://github.com/henryr/pyzk-recipes.git
+git_clone_or_pull zk-smoketest https://github.com/phunt/zk-smoketest.git
 git_clone_or_pull djeep https://github.com/cloudbuilders/djeep.git
 git_clone_or_pull crowbar git@github.com:heckj/crowbar.git
 git_clone_or_pull fabric git@github.com:fabric/fabric.git
