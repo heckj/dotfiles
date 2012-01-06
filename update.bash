@@ -114,6 +114,8 @@ git_clone_or_pull kong https://github.com/cloudbuilders/kong.git
 git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
 
 git_clone_or_pull mongo-python-driver https://github.com/mongodb/mongo-python-driver.git
+git_clone_or_pull python-evzookeeper https://github.com/maoy/python-evzookeeper
+git_clone_or_pull curator https://github.com/Netflix/curator
 
 echo " ------------------------------------------------------------------ "
 NAME=openstack.compute
@@ -161,6 +163,7 @@ echo "         BZR (related)             "
 echo " ================================= "
 
 bzr_clone_or_pull graphite lp:graphite
+bzr_clone_or_pull txzookeper lp:txzookeeper
 bzr_clone_or_pull juju lp:juju
 bzr_clone_or_pull charm-tools lp:charm-tools
 
