@@ -60,18 +60,20 @@ fi
 
 git_clone_or_pull ops git@github.com:4P/ops.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
+git_clone_or_pull python-maestroclient git@github.com:4P/python-maestroclient.git
 git_clone_or_pull ipxe git@github.com:4P/ipxe.git
+git_clone_or_pull lcd git@github.com:4P/lcd.git
 git_clone_or_pull arista git@github.com:4P/arista.git
 git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull public-www git@github.com:4P/public-www.git
+git_clone_or_pull python-keystoneclient git@github.com:4P/python-keystoneclient
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull controller git@github.com:4P/controller.git
 git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
-git_clone_or_pull keystonelight https://github.com/termie/keystonelight.git
+git_clone_or_pull keystonelight git@github.com:4P/keystonelight.git
 git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
-git_clone_or_pull python-keystoneclient https://github.com/4P/python-keystoneclient
 git_clone_or_pull api-site-mock git@github.com:heckj/api-site-mock.git
 
 echo " ======================================= "
@@ -86,7 +88,7 @@ git_clone_or_pull nova https://github.com/openstack/nova.git
 git_clone_or_pull swift https://github.com/openstack/swift.git
 git_clone_or_pull glance https://github.com/openstack/glance.git
 git_clone_or_pull quantum https://github.com/openstack/quantum.git
-git_clone_or_pull openstack-integration-tests https://github.com/openstack/openstack-integration-tests.git
+git_clone_or_pull tempest https://github.com/openstack/tempest.git
 git_clone_or_pull horizon https://github.com/openstack/horizon.git
 
 git_clone_or_pull compute-api https://github.com/openstack/compute-api.git
@@ -105,6 +107,8 @@ git_clone_or_pull kombu https://github.com/ask/kombu.git
 git_clone_or_pull git-cl https://github.com/martine/git-cl.git
 git_clone_or_pull kokki git://github.com/samuel/kokki
 git_clone_or_pull zookeeper https://github.com/apache/zookeeper.git
+git_clone_or_pull pyzk-recipes https://github.com/henryr/pyzk-recipes.git
+git_clone_or_pull zk-smoketest https://github.com/phunt/zk-smoketest.git
 git_clone_or_pull djeep https://github.com/cloudbuilders/djeep.git
 git_clone_or_pull crowbar git@github.com:heckj/crowbar.git
 git_clone_or_pull fabric git@github.com:fabric/fabric.git
@@ -112,6 +116,8 @@ git_clone_or_pull kong https://github.com/cloudbuilders/kong.git
 git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
 
 git_clone_or_pull mongo-python-driver https://github.com/mongodb/mongo-python-driver.git
+git_clone_or_pull python-evzookeeper https://github.com/maoy/python-evzookeeper
+git_clone_or_pull curator https://github.com/Netflix/curator
 
 echo " ------------------------------------------------------------------ "
 NAME=openstack.compute
@@ -159,6 +165,7 @@ echo "         BZR (related)             "
 echo " ================================= "
 
 bzr_clone_or_pull graphite lp:graphite
+bzr_clone_or_pull txzookeper lp:txzookeeper
 bzr_clone_or_pull juju lp:juju
 bzr_clone_or_pull charm-tools lp:charm-tools
 
