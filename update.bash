@@ -72,7 +72,7 @@ git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull controller git@github.com:4P/controller.git
 git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
-git_clone_or_pull keystonelight git@github.com:4P/keystonelight.git
+git_clone_or_pull keystonelight git@github.com:termie/keystonelight.git
 git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
 git_clone_or_pull api-site-mock git@github.com:heckj/api-site-mock.git
 
