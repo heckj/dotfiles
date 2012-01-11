@@ -72,6 +72,7 @@ git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull controller git@github.com:4P/controller.git
 git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
+git_clone_or_pull openstack-common https://github.com/openstack/openstack-common.git
 git_clone_or_pull keystonelight git@github.com:termie/keystonelight.git
 git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
 git_clone_or_pull api-site-mock git@github.com:heckj/api-site-mock.git
@@ -83,7 +84,6 @@ echo " ======================================= "
 git_clone_or_pull keystone https://github.com/openstack/keystone.git
 git_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
 git_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
-git_clone_or_pull openstack-skeleton https://github.com/openstack/openstack-skeleton.git
 git_clone_or_pull nova https://github.com/openstack/nova.git
 git_clone_or_pull swift https://github.com/openstack/swift.git
 git_clone_or_pull glance https://github.com/openstack/glance.git
