@@ -62,7 +62,9 @@ git_clone_or_pull ops git@github.com:4P/ops.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
 git_clone_or_pull python-maestroclient git@github.com:4P/python-maestroclient.git
 git_clone_or_pull ipxe git@github.com:4P/ipxe.git
-git_clone_or_pull lcd git@github.com:4P/lcd.git
+git_clone_or_pull lcd_ctrl-fw git@github.com:4P/lcd_ctrl-fw.git
+git_clone_or_pull lcd_ctrl-pcb git@github.com:4P/lcd_ctrl-pcb.git
+git_clone_or_pull sheepdog git@github.com:4P/sheepdog.git
 git_clone_or_pull arista git@github.com:4P/arista.git
 git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull public-www git@github.com:4P/public-www.git
