@@ -68,30 +68,38 @@ git_clone_or_pull sheepdog git@github.com:4P/sheepdog.git
 git_clone_or_pull arista git@github.com:4P/arista.git
 git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull public-www git@github.com:4P/public-www.git
-git_clone_or_pull python-keystoneclient git@github.com:4P/python-keystoneclient
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
+
+# ??
 git_clone_or_pull controller git@github.com:4P/controller.git
-git_clone_or_pull noVNC https://github.com/cloudbuilders/noVNC.git
+
+git_clone_or_pull python-keystoneclient git@github.com:4P/python-keystoneclient
+git_clone_or_pull python-quantumclient git@github.com:4P/python-quantumclient
+git_clone_or_pull python-novaclient git@github.com:4P/python-novaclient
+git_clone_or_pull python-melangeclient git@github.com:4P/python-melangeclient
+git_clone_or_pull noVNC git@github.com:4P/noVNC.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
-git_clone_or_pull openstack-common https://github.com/openstack/openstack-common.git
+git_clone_or_pull openstack-common git@github.com:4P/openstack-common.git
+
+git_clone_or_pull keystone git@github.com:4P/keystone.git
+git_clone_or_pull nova git@github.com/4P/nova.git
+git_clone_or_pull swift git@github.com/4P/swift.git
+git_clone_or_pull glance git@github.com/4P/glance.git
+git_clone_or_pull quantum git@github.com/4P/quantum.git
+git_clone_or_pull horizon git@github.com/4P/horizon.git
+
 git_clone_or_pull keystonelight git@github.com:termie/keystonelight.git
 git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
+git_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
+git_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
+git_clone_or_pull tempest https://github.com/openstack/tempest.git
 git_clone_or_pull api-site-mock git@github.com:heckj/api-site-mock.git
 
 echo " ======================================= "
 echo "            GITHUB (related)             "
 echo " ======================================= "
 
-git_clone_or_pull keystone https://github.com/openstack/keystone.git
-git_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
-git_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
-git_clone_or_pull nova https://github.com/openstack/nova.git
-git_clone_or_pull swift https://github.com/openstack/swift.git
-git_clone_or_pull glance https://github.com/openstack/glance.git
-git_clone_or_pull quantum https://github.com/openstack/quantum.git
-git_clone_or_pull tempest https://github.com/openstack/tempest.git
-git_clone_or_pull horizon https://github.com/openstack/horizon.git
 
 git_clone_or_pull compute-api https://github.com/openstack/compute-api.git
 git_clone_or_pull object-api https://github.com/openstack/object-api.git
@@ -153,14 +161,6 @@ else
 fi
 
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
-
-echo " ================================= "
-echo "         BZR (OpenStack)           "
-echo " ================================= "
-
-bzr_clone_or_pull openstack-ubuntu-packagers-nova lp:~openstack-ubuntu-packagers/nova/ubuntu
-bzr_clone_or_pull openstack-ubuntu-packagers-glance lp:~openstack-ubuntu-packagers/glance/ubuntu
-bzr_clone_or_pull openstack-ubuntu-packagers-swift lp:~openstack-ubuntu-packagers/swift/ubuntu
 
 echo " ================================= "
 echo "         BZR (related)             "
