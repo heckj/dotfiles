@@ -70,23 +70,22 @@ git_clone_or_pull public-www git@github.com:4P/public-www.git
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 
-git_clone_or_pull python-keystoneclient git@github.com:4P/python-keystoneclient
-git_clone_or_pull python-quantumclient git@github.com:4P/python-quantumclient
-git_clone_or_pull python-novaclient git@github.com:4P/python-novaclient
-git_clone_or_pull python-melangeclient git@github.com:4P/python-melangeclient
-git_clone_or_pull noVNC git@github.com:4P/noVNC.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
-git_clone_or_pull openstack-common git@github.com:4P/openstack-common.git
+git_clone_or_pull python-keystoneclient git@github.com:openstack/python-keystoneclient
+git_clone_or_pull python-quantumclient git@github.com:openstack/python-quantumclient
+git_clone_or_pull python-novaclient git@github.com:openstack/python-novaclient
+git_clone_or_pull python-melangeclient git@github.com:openstack/python-melangeclient
+git_clone_or_pull noVNC git@github.com:openstack/noVNC.git
 
-git_clone_or_pull nova git@github.com:4P/nova.git
-git_clone_or_pull swift git@github.com:4P/swift.git
-git_clone_or_pull glance git@github.com:4P/glance.git
-git_clone_or_pull quantum git@github.com:4P/quantum.git
-git_clone_or_pull horizon git@github.com:4P/horizon.git
-git_clone_or_pull keystone git@github.com:4P/keystone.git
+git_clone_or_pull openstack-common git@github.com:openstack/openstack-common.git
+git_clone_or_pull nova git@github.com:openstack/nova.git
+git_clone_or_pull swift git@github.com:openstack/swift.git
+git_clone_or_pull glance git@github.com:openstack/glance.git
+git_clone_or_pull quantum git@github.com:openstack/quantum.git
+git_clone_or_pull horizon git@github.com:openstack/horizon.git
+git_clone_or_pull keystone git@github.com:openstack/keystone.git
 
 
-git_clone_or_pull keystonelight git@github.com:termie/keystonelight.git
 git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
 git_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
 git_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
@@ -105,14 +104,10 @@ git_clone_or_pull identity-api https://github.com/openstack/identity-api.git
 git_clone_or_pull openstack-manuals https://github.com/openstack/openstack-manuals.git
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
 
-#git_clone_or_pull lettuce https://github.com/gabrielfalcao/lettuce.git
-#git_clone_or_pull cobbler git://git.fedorahosted.org/cobbler
 git_clone_or_pull benchmarker git@github.com:heckj/benchmarker.git
 git_clone_or_pull py-statsd git@github.com:heckj/py-statsd.git
 git_clone_or_pull celery git://github.com/ask/celery.git
 git_clone_or_pull kombu https://github.com/ask/kombu.git
-#git_clone_or_pull git-cl https://github.com/martine/git-cl.git
-#git_clone_or_pull kokki git://github.com/samuel/kokki
 git_clone_or_pull zookeeper https://github.com/apache/zookeeper.git
 git_clone_or_pull pyzk-recipes https://github.com/henryr/pyzk-recipes.git
 git_clone_or_pull zk-smoketest https://github.com/phunt/zk-smoketest.git
@@ -122,7 +117,6 @@ git_clone_or_pull fabric git@github.com:fabric/fabric.git
 git_clone_or_pull kong https://github.com/cloudbuilders/kong.git
 git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
 
-#git_clone_or_pull mongo-python-driver https://github.com/mongodb/mongo-python-driver.git
 git_clone_or_pull python-evzookeeper https://github.com/maoy/python-evzookeeper
 git_clone_or_pull curator https://github.com/Netflix/curator
 
@@ -132,8 +126,6 @@ echo " ================================= "
 
 bzr_clone_or_pull graphite lp:graphite
 bzr_clone_or_pull txzookeper lp:txzookeeper
-#bzr_clone_or_pull juju lp:juju
-#bzr_clone_or_pull charm-tools lp:charm-tools
 #
 #echo " ================================= "
 #echo "            IOS & MAC              "
