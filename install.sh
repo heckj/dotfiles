@@ -5,7 +5,7 @@ if [ `uname -s` == "Linux" ]; then
     if grep -q "Ubuntu" /etc/issue; then
         ENVSETUPENV="Ubuntu"
         # go ahead and install a vim with everything compiled in
-        sudo apt-get install vim-gnome exuberant-ctags ack-grep
+        sudo apt-get install vim-gnome exuberant-ctags ack-grep python-pip
     fi
 elif [ `uname -s` == "Darwin" ]; then
     brew install ctags ack
@@ -38,4 +38,4 @@ ln -s `pwd`/gitconfig $HOME/.gitconfig
 ln -s `pwd`/update.bash $HOME/update.bash
 ln -s `pwd`/pylintrc $HOME/.pylintrc
 
-
+touch $HOME/.vim/bundle/vim-markdown/doc/foo
