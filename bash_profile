@@ -105,6 +105,7 @@ if [ -s /usr/local/bin/mvim ]; then
     alias vi=/usr/local/bin/mvim
     alias vim=/usr/local/bin/mvim
 fi
+export PIP_DOWNLOAD_CACHE=~/cache/pip
 
 # Enable git command line completion.
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
