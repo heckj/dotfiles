@@ -61,6 +61,7 @@ fi
 
 git_clone_or_pull ops git@github.com:4P/ops.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
+git_clone_or_pull buildroot git@github.com:4P/buildroot.git
 git_clone_or_pull python-maestroclient git@github.com:4P/python-maestroclient.git
 git_clone_or_pull ipxe git@github.com:4P/ipxe.git
 git_clone_or_pull sheepdog git@github.com:4P/sheepdog.git
