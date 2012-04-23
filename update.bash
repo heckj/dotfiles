@@ -59,6 +59,7 @@ else
   git remote add devcamcar git@github.com:devcamcar/dotfiles.git
 fi
 
+git_clone_or_pull initramfs-tools git@github.com:4P/initramfs-tools
 git_clone_or_pull ops git@github.com:4P/ops.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
 git_clone_or_pull tools git@github.com:4P/tools.git
