@@ -79,6 +79,7 @@ git_clone_or_pull python-keystoneclient git@github.com:openstack/python-keystone
 git_clone_or_pull python-quantumclient git@github.com:openstack/python-quantumclient
 git_clone_or_pull python-novaclient git@github.com:openstack/python-novaclient
 git_clone_or_pull python-melangeclient git@github.com:openstack/python-melangeclient
+git_clone_or_pull python-glanceclient git@github.com:openstack/python-glanceclient
 git_clone_or_pull noVNC git@github.com:openstack/noVNC.git
 
 git_clone_or_pull openstack-common git@github.com:openstack/openstack-common.git
