@@ -102,8 +102,7 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 export PIP_RESPECT_VIRTUALENV=true
 export ARCHFLAGS="-arch i386 -arch x86_64"
 if [ -s ~/bin/mvim ]; then
-    alias vi=~/bin/mvim
-    alias vim=~/bin/mvim
+    alias vi=~/bin/mvim -v
 fi
 export PIP_DOWNLOAD_CACHE=~/cache/pip
 
