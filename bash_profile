@@ -96,12 +96,12 @@ export CLICOLOR=1
 export LSCOLORS=ExGxcxdxCxegedabagacad
 export EDITOR=/usr/bin/vim
 export GOROOT=/Users/heckj/src/go
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/sw/bin:~/.ec2/bin:~/bin:$GOROOT/bin
+export PATH=/usr/local/bin:/usr/local/sbin:~/.ec2/bin:~/bin:$GOROOT/bin:$PATH
 export MANPATH=$MANPATH:/opt/local/share/man
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 export PIP_RESPECT_VIRTUALENV=true
 export ARCHFLAGS="-arch i386 -arch x86_64"
-if [ -s /usr/local/bin/mvim ]; then
+if [ -s ~/bin/mvim ]; then
     alias vi=/usr/local/bin/mvim
     alias vim=/usr/local/bin/mvim
 fi
