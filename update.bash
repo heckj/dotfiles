@@ -124,21 +124,3 @@ git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
 
 git_clone_or_pull python-evzookeeper https://github.com/maoy/python-evzookeeper
 git_clone_or_pull curator https://github.com/Netflix/curator
-
-echo " ================================= "
-echo "         BZR (related)             "
-echo " ================================= "
-
-bzr_clone_or_pull graphite lp:graphite
-bzr_clone_or_pull txzookeper lp:txzookeeper
-#
-#echo " ================================= "
-#echo "            IOS & MAC              "
-#echo " ================================= "
-#
-#git_clone_or_pull rackspace-ios https://github.com/rackspace/rackspace-ios.git
-#git_update ioctocat
-#git_update iTerm2
-#git_update stsh-client
-#git_update ludus
-#git_update boardtest
