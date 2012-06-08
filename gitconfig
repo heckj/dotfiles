@@ -17,4 +17,5 @@
     br = branch
     la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
     alog = log --graph --pretty=\"format:%ad %h (%an): %s\" --date=short
+    fulllog = log --graph --decorate=full --date=short
     review = push gerrit HEAD:refs/for/master
