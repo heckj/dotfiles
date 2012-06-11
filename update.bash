@@ -61,6 +61,7 @@ fi
 
 git_clone_or_pull initramfs-tools git@github.com:4P/initramfs-tools
 git_clone_or_pull ops git@github.com:4P/ops.git
+git_clone_or_pull chef-ops git@github.com:4P/chef-ops.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
 git_clone_or_pull tools git@github.com:4P/tools.git
 git_clone_or_pull eos git@github.com:4P/eos.git
