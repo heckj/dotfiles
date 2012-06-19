@@ -9,6 +9,8 @@
 [user]
     name = Joe Heck
     email = heckj@mac.com
+[github]
+    user = heckj
 [alias]
     ci = commit
     st = status
