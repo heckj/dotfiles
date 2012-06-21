@@ -7,6 +7,11 @@ if [ `uname -s` == "Linux" ]; then
         # go ahead and install a vim with everything compiled in
         sudo apt-get install vim-gnome exuberant-ctags ack-grep python-pip
     fi
+    if grep -q "Linux Mint" /etc/issue; then
+        ENVSETUPENV="Ubuntu"
+        # go ahead and install a vim with everything compiled in
+        sudo apt-get install vim-gnome exuberant-ctags ack-grep python-pip
+    fi
 elif [ `uname -s` == "Darwin" ]; then
     brew install ctags ack
 else
