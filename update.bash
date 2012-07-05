@@ -59,7 +59,7 @@ else
   git remote add devcamcar git@github.com:devcamcar/dotfiles.git
 fi
 
-git_clone_or_pull bp-issues https://github.com/ttx/bp-issues.git
+git_clone_or_pull nebulapki git@github.com:4P/nebulapki.git
 git_clone_or_pull initramfs-tools git@github.com:4P/initramfs-tools.git
 git_clone_or_pull ops git@github.com:4P/ops.git
 git_clone_or_pull chef-ops git@github.com:4P/chef-ops.git
@@ -76,6 +76,7 @@ git_clone_or_pull public-www git@github.com:4P/public-www.git
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 
+git_clone_or_pull bp-issues https://github.com/ttx/bp-issues.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
 git_clone_or_pull python-keystoneclient git@github.com:openstack/python-keystoneclient
 git_clone_or_pull python-quantumclient git@github.com:openstack/python-quantumclient
@@ -91,7 +92,6 @@ git_clone_or_pull glance git@github.com:openstack/glance.git
 git_clone_or_pull quantum git@github.com:openstack/quantum.git
 git_clone_or_pull horizon git@github.com:openstack/horizon.git
 git_clone_or_pull keystone git@github.com:openstack/keystone.git
-
 
 git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
 git_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
