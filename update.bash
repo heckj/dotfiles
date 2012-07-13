@@ -112,18 +112,16 @@ git_clone_or_pull identity-api https://github.com/openstack/identity-api.git
 git_clone_or_pull openstack-manuals https://github.com/openstack/openstack-manuals.git
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
 
-git_clone_or_pull benchmarker git@github.com:heckj/benchmarker.git
+
 git_clone_or_pull py-statsd git@github.com:heckj/py-statsd.git
 git_clone_or_pull celery git://github.com/ask/celery.git
 git_clone_or_pull kombu https://github.com/ask/kombu.git
+git_clone_or_pull curator https://github.com/Netflix/curator
 git_clone_or_pull zookeeper https://github.com/apache/zookeeper.git
-git_clone_or_pull pyzk-recipes https://github.com/henryr/pyzk-recipes.git
-git_clone_or_pull zk-smoketest https://github.com/phunt/zk-smoketest.git
 git_clone_or_pull djeep https://github.com/cloudbuilders/djeep.git
 git_clone_or_pull crowbar git@github.com:heckj/crowbar.git
 git_clone_or_pull fabric git@github.com:fabric/fabric.git
 git_clone_or_pull kong https://github.com/cloudbuilders/kong.git
 git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
-
-git_clone_or_pull python-evzookeeper https://github.com/maoy/python-evzookeeper
-git_clone_or_pull curator https://github.com/Netflix/curator
+git_clone_or_pull benchmarker git@github.com:heckj/benchmarker.git
+git_clone_or_pull om git@github.com:heckj/om.git
