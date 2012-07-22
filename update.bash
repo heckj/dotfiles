@@ -126,3 +126,4 @@ git_clone_or_pull stacktester https://github.com/rackspace-titan/stacktester.git
 git_clone_or_pull benchmarker git@github.com:heckj/benchmarker.git
 git_clone_or_pull doyen git@github.com:heckj/doyen.git
 git_clone_or_pull om git@github.com:heckj/om.git
+git_clone_or_pull zombie git@github.com:termie/zombie.git
