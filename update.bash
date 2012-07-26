@@ -9,7 +9,8 @@ function git_update {
     cd ~/src/$1
     git remote -v
     git status
-    git pull origin master
+    git fetch --all --prune
+    git merge origin master
     s2
   fi
 }
@@ -21,7 +22,8 @@ function git_clone_or_pull {
     cd ~/src/$1
     git remote -v
     git status
-    git pull
+    git fetch --all --prune
+    git merge origin master
   else
     cd ~/src
     git clone $2 $1
