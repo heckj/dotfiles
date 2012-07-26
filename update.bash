@@ -112,7 +112,8 @@ git_clone_or_pull identity-api https://github.com/openstack/identity-api.git
 git_clone_or_pull openstack-manuals https://github.com/openstack/openstack-manuals.git
 git_clone_or_pull openstack-org https://github.com/toddmorey/openstack-org.git
 
-
+git_clone_or_pull django-openstack-auth git@github.com:4P/python-django-openstack-auth.git
+git_clone_or_pull featuredash git@github.com:4P/FeatureDash.git
 git_clone_or_pull py-statsd git@github.com:heckj/py-statsd.git
 git_clone_or_pull celery git://github.com/ask/celery.git
 git_clone_or_pull kombu https://github.com/ask/kombu.git
