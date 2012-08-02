@@ -33,14 +33,11 @@ function git_clone_or_pull {
 function add_remote {
   echo " ------------------------------------------------------------------ "
   echo "src/$1"
-  if [ -d ~/src/$1/.git ]; then
-    cd ~/src/$1
-    git remote -v
-    git remote add $2 $3
-    git fetch --all --prune
-    git status
-  else
-
+  cd ~/src/$1
+  git remote -v
+  git remote add $2 $3
+  git fetch --all --prune
+  git status
 }
 
 function bzr_clone_or_pull {
