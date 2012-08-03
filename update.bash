@@ -122,7 +122,7 @@ add_remote keystone openstack https://github.com/openstack/keystone.git
 
 git_clone_or_pull django-openstack-auth git@github.com:4P/python-django-openstack-auth.git
 git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
-git_clone_or_pull zookeeper https://github.com/4P/zookeeper.git
+git_clone_or_pull zookeeper git@github.com:4P/zookeeper.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
 git_clone_or_pull tools git@github.com:4P/tools.git
 git_clone_or_pull eos git@github.com:4P/eos.git
