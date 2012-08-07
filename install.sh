@@ -42,5 +42,6 @@ ln -s `pwd`/bashrc $HOME/.bashrc
 ln -s `pwd`/gitconfig $HOME/.gitconfig
 ln -s `pwd`/update.bash $HOME/update.bash
 ln -s `pwd`/pylintrc $HOME/.pylintrc
+ln -s `pwd`/cloudenvy $HOME/.cloudenvy
 
 touch $HOME/.vim/bundle/vim-markdown/doc/foo
