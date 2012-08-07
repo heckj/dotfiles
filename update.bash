@@ -81,6 +81,8 @@ git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull alexandria git@github.com:4P/alexandria.git
 
 git_clone_or_pull cloudenvy git@github.com:heckj/cloudenvy.git
+add_remote cloudenvy bcwaldon https://github.com/bcwaldon/cloudenvy.git
+
 git_clone_or_pull bp-issues https://github.com/ttx/bp-issues.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
 
