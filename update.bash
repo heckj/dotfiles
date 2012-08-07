@@ -82,6 +82,7 @@ git_clone_or_pull alexandria git@github.com:4P/alexandria.git
 git_clone_or_pull taft git@github.com:4P/taft.git
 git_clone_or_pull intranet git@github.com:4P/intranet.git
 git_clone_or_pull python-warlock git@github.com:4P/python-warlock.git
+git_clone_or_pull python-jsonschema git@github.com:4P/python-jsonschema.git
 
 git_clone_or_pull cloudenvy git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy bcwaldon https://github.com/bcwaldon/cloudenvy.git
