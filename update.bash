@@ -72,7 +72,6 @@ else
 fi
 
 git_clone_or_pull chef-ops git@github.com:4P/chef-ops.git
-git_clone_or_pull buildroot git@github.com:4P/buildroot.git
 git_clone_or_pull ipxe git@github.com:4P/ipxe.git
 git_clone_or_pull arista git@github.com:4P/arista.git
 git_clone_or_pull public-www git@github.com:4P/public-www.git
@@ -83,6 +82,8 @@ git_clone_or_pull taft git@github.com:4P/taft.git
 git_clone_or_pull intranet git@github.com:4P/intranet.git
 git_clone_or_pull python-warlock git@github.com:4P/python-warlock.git
 git_clone_or_pull python-jsonschema git@github.com:4P/python-jsonschema.git
+git_clone_or_pull nebstack git@github.com:4P/nebstack.git
+git_clone_or_pull stackstack git@github.com:4P/stackstack.git
 
 git_clone_or_pull cloudenvy git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy bcwaldon https://github.com/bcwaldon/cloudenvy.git
