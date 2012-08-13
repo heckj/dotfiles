@@ -10,6 +10,7 @@ function git_update {
     git remote -v
     git status
     git fetch --all --prune
+    git checkout master
     git merge origin master
     s2
   fi
@@ -23,6 +24,7 @@ function git_clone_or_pull {
     git remote -v
     git status
     git fetch --all --prune
+    git checkout master
     git merge origin master
   else
     cd ~/src
