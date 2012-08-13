@@ -4,11 +4,11 @@
 
 [DEFAULT]
 # The keypair to use for new instances, defaults to your current login name.
-#keypair_name=<myname>
+keypair_name=heckj
 
 # The public key to use if the keypair above does not exist, defaults
 # to ~/.ssh/id_rsa.pub
-#keypair_location=/home/<myname>/.ssh/id_rsa.pub
+keypair_location=/home/heckj/.ssh/id_dsa.pub
 
 
 # This is the default cloud name, if you want to use multiple
@@ -20,7 +20,7 @@ OS_AUTH_URL=http://proxy.env4.mview.int.nebula.com:8070/v2.0
 OS_USERNAME=heckj
 OS_PASSWORD=eojcc
 OS_TENANT_NAME=heckj-project
-#OS_TENANT_ID=<mytenantid>
+OS_TENANT_ID=5afd3826d75c40c5ac502dcd3c9ffbb0
 
 
 # This is the default template name, if you want to use multiple
