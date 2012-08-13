@@ -134,13 +134,14 @@ git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull zookeeper git@github.com:4P/zookeeper.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
 git_clone_or_pull tools git@github.com:4P/tools.git
-git_clone_or_pull eos git@github.com:4P/eos.git
+add_remote tools heckj git@github.com:heckj/tools.git
 git_clone_or_pull nebulapki git@github.com:4P/nebulapki.git
 git_clone_or_pull initramfs-tools git@github.com:4P/initramfs-tools.git
 git_clone_or_pull ops git@github.com:4P/ops.git
 git_clone_or_pull python-maestroclient git@github.com:4P/python-maestroclient.git
 git_clone_or_pull featuredash git@github.com:4P/FeatureDash.git
 git_clone_or_pull sheepdog git@github.com:4P/sheepdog.git
+git_clone_or_pull eos git@github.com:4P/eos.git
 
 git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
 git_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
