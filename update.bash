@@ -29,6 +29,7 @@ function git_clone_or_pull {
   else
     cd ~/src
     git clone $2 $1
+    git checkout master
   fi
 }
 
