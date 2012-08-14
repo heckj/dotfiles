@@ -2,20 +2,6 @@
 
 export USERNAME=$USER
 
-function git_update {
-  if [ -d ~/src/$1/.git ]; then
-    echo " ------------------------------------------------------------------ "
-    echo "src/$1"
-    cd ~/src/$1
-    git remote -v
-    git status
-    git fetch --all --prune
-    git checkout master
-    git merge origin master
-    s2
-  fi
-}
-
 function git_clone_or_pull {
   echo " ------------------------------------------------------------------ "
   echo "src/$1"
