@@ -10,13 +10,9 @@ function git_clone_or_pull {
     git remote -v
     git status
     git fetch --all --prune
-    git checkout master
-    git merge origin master
   else
     cd ~/src
     git clone $2 $1
-    cd $1
-    git checkout master
   fi
 }
 
@@ -28,18 +24,6 @@ function add_remote {
   git remote add $2 $3
   git fetch --all --prune
   git status
-}
-
-function bzr_clone_or_pull {
-  echo " ------------------------------------------------------------------ "
-  echo "src/$1"
-  if [ -d ~/src/$1/.bzr ]; then
-    cd ~/src/$1
-    bzr pull
-  else
-    cd ~/src
-    bzr branch $2 $1
-  fi
 }
 
 echo " ======================================= "
