@@ -146,7 +146,7 @@ git_clone_or_pull eos git@github.com:4P/eos.git
 git_clone_or_pull openstack-qa https://github.com/openstack-dev/openstack-qa.git
 git_clone_or_pull openstack-ci https://github.com/openstack/openstack-ci.git
 git_clone_or_pull openstack-ci-puppet https://github.com/openstack/openstack-ci-puppet.git
-git_clone_or_pull tantrum git@github.com:4P/trantrum.git
+git_clone_or_pull tantrum git@github.com:4P/tantrum.git
 add_remote tantrum openstack https://github.com/openstack/tempest.git
 
 git_clone_or_pull compute-api https://github.com/openstack/compute-api.git
