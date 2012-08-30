@@ -79,6 +79,9 @@ add_remote python-novaclient openstack https://github.com/openstack/python-novac
 git_clone_or_pull python-glanceclient git@github.com:4P/python-glanceclient
 add_remote python-glanceclient openstack https://github.com/openstack/python-glanceclient.git
 
+git_clone_or_pull python-swiftclient git@github.com:4P/python-swiftclient
+add_remote python-swiftclient openstack https://github.com/openstack/python-swiftclient.git
+
 git_clone_or_pull noVNC git@github.com:4P/noVNC.git
 add_remote noVNC openstack https://github.com/openstack/noVNC
 
