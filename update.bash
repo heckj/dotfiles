@@ -89,6 +89,9 @@ add_remote noVNC openstack https://github.com/openstack/noVNC
 git_clone_or_pull openstack-common git@github.com:4P/openstack-common.git
 add_remote openstack-common openstack https://github.com/openstack/openstack-common.git
 
+git_clone_or_pull python-openstackclient git@github.com:4P/python-openstackclient.git
+add_remote python-openstackclient openstack https://github.com/openstack/python-openstackclient.git
+
 git_clone_or_pull nova git@github.com:4P/nova.git
 add_remote nova openstack https://github.com/openstack/nova.git
 
