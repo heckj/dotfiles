@@ -60,6 +60,7 @@ git_clone_or_pull nebstack git@github.com:4P/nebstack.git
 add_remote nebstack heckj git@github.com:heckj/nebstack.git
 git_clone_or_pull stackstack git@github.com:4P/stackstack.git
 git_clone_or_pull nebula_tools git@github.com:4P/nebula_tools.git
+git_clone_or_pull hardware_tools git@github.com:4P/hardware_tools.git
 
 git_clone_or_pull cloudenvy git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy bcwaldon https://github.com/bcwaldon/cloudenvy.git
