@@ -96,7 +96,10 @@ git_clone_or_pull nova git@github.com:4P/nova.git
 add_remote nova openstack https://github.com/openstack/nova.git
 
 git_clone_or_pull swift git@github.com:4P/swift.git
-add_remote nova openstack https://github.com/openstack/nova.git
+add_remote swift openstack https://github.com/openstack/swift.git
+
+git_clone_or_pull cinder git@github.com:4P/cinder.git
+add_remote cinder openstack https://github.com/openstack/cinder.git
 
 git_clone_or_pull glance git@github.com:4P/glance.git
 add_remote glance openstack https://github.com/openstack/glance.git
