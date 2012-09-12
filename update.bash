@@ -92,6 +92,9 @@ add_remote openstack-common openstack https://github.com/openstack/openstack-com
 git_clone_or_pull python-openstackclient git@github.com:4P/python-openstackclient.git
 add_remote python-openstackclient openstack https://github.com/openstack/python-openstackclient.git
 
+git_clone_or_pull python-cinderclient git@github.com:4P/python-cinderclient.git
+add_remote python-cinderclient openstack https://github.com/openstack/python-cinderclient.git
+
 git_clone_or_pull nova git@github.com:4P/nova.git
 add_remote nova openstack https://github.com/openstack/nova.git
 
