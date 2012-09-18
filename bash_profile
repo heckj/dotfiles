@@ -98,7 +98,6 @@ export EDITOR=/usr/bin/vim
 export GOROOT=/Users/heckj/src/go
 export PATH=/usr/local/bin:/usr/local/sbin:~/.ec2/bin:~/bin:$GOROOT/bin:$PATH
 export MANPATH=$MANPATH:/opt/local/share/man
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 export PIP_RESPECT_VIRTUALENV=true
 export ARCHFLAGS="-arch i386 -arch x86_64"
 if [ -s ~/bin/mvim ]; then
