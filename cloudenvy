@@ -20,7 +20,7 @@ OS_AUTH_URL=http://proxy.env4.mview.int.nebula.com:8070/v2.0
 OS_USERNAME=heckj
 OS_PASSWORD=eojcc
 OS_TENANT_NAME=heckj-project
-OS_TENANT_ID=bbc22751d34049fd864d5860bd79031e
+OS_TENANT_ID=225da22d3ce34b15877ea70b2a575f58
 
 
 # This is the default template name, if you want to use multiple
