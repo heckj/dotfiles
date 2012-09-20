@@ -224,3 +224,4 @@ au BufWinEnter *.xul silent loadview
 au BufWinLeave *.xml mkview
 au BufWinEnter *.xml silent loadview
 let javaScript_fold=1
+set foldlevel=999
