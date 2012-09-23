@@ -156,3 +156,7 @@ git_clone_or_pull benchmarker git@github.com:heckj/benchmarker.git
 git_clone_or_pull doyen git@github.com:heckj/doyen.git
 git_clone_or_pull om git@github.com:heckj/om.git
 git_clone_or_pull zombie git@github.com:termie/zombie.git
+
+# export maestro latest for reading offline
+mkdir -p ~/Dropbox/nebula/src/maestro
+git archive master | tar -x -C ~/Dropbox/nebula/src/maestro
