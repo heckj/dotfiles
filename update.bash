@@ -120,6 +120,7 @@ git_clone_or_pull django-openstack-auth git@github.com:4P/python-django-openstac
 git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull zookeeper git@github.com:4P/zookeeper.git
 git_clone_or_pull maestro git@github.com:4P/maestro.git
+git_clone_or_pull maestro-presence git@github.com:4P/maestro-presence.git
 git_clone_or_pull tools git@github.com:4P/tools.git
 add_remote tools heckj git@github.com:heckj/tools.git
 git_clone_or_pull nebulapki git@github.com:4P/nebulapki.git
