@@ -10,7 +10,7 @@ EOF
 
 # Install git and clone my dotfiles
 sudo apt-get install -y git
-git clone git@github.com:heckj/dotfiles.git
+git clone https://github.com/heckj/dotfiles.git
 cd dotfiles
 
 # Run individual provision scripts.
