@@ -65,6 +65,8 @@ git_clone_or_pull hardware_tools git@github.com:4P/hardware_tools.git
 git_clone_or_pull cloudenvy git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy bcwaldon https://github.com/bcwaldon/cloudenvy.git
 
+git_clone_or_pull packman-tools git@github.com:4P/packman-tools.git
+
 git_clone_or_pull bp-issues https://github.com/ttx/bp-issues.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
 

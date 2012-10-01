@@ -1,4 +1,7 @@
 cloudenvy:
+  keypair_name: heckj
+  keypair_location: ~/.ssh/id_dsa.pub
+
   clouds:
     env4:
       os_auth_url: http://proxy.env4.mview.int.nebula.com:8770/v2.0/

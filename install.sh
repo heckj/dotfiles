@@ -20,7 +20,7 @@ else
 fi
 
 # Install python dependencies
-sudo pip install pep8 pyflakes
+sudo pip install pep8 pyflakes cloudenvy
 
 # Initialize and pull git submodules
 git submodule update --init --recursive
@@ -31,7 +31,8 @@ rm -rf $HOME/.bash_profile
 rm -rf $HOME/.bashrc
 rm -rf $HOME/.gitconfig
 rm -rf $HOME/.pylintrc
-rm     $HOME/update.bash
+rm -f  $HOME/update.bash
+rm -f  $HOME/Envyfile
 
 ln -s `pwd`/vim/vim $HOME/.vim
 ln -s `pwd`/vim/vimrc $HOME/.vimrc
@@ -43,5 +44,6 @@ ln -s `pwd`/gitconfig $HOME/.gitconfig
 ln -s `pwd`/update.bash $HOME/update.bash
 ln -s `pwd`/pylintrc $HOME/.pylintrc
 ln -s `pwd`/cloudenvy $HOME/.cloudenvy
+ln -s `pwd`/Envyfile $HOME/Envyfile
 
 touch $HOME/.vim/bundle/vim-markdown/doc/foo
