@@ -26,11 +26,12 @@ sudo pip install pep8 pyflakes cloudenvy
 git submodule update --init --recursive
 
 rm -rf $HOME/.vim $HOME/.vimrc $HOME/.gvimrc
-rm -rf $HOME/.screenrc
-rm -rf $HOME/.bash_profile
-rm -rf $HOME/.bashrc
-rm -rf $HOME/.gitconfig
-rm -rf $HOME/.pylintrc
+rm -f  $HOME/.screenrc
+rm -f  $HOME/.bash_profile
+rm -f  $HOME/.bashrc
+rm -f  $HOME/.gitconfig
+rm -f  $HOME/.pylintrc
+rm -f  $HOME/.cloudenvy
 rm -f  $HOME/update.bash
 rm -f  $HOME/Envyfile
 rm -f  $HOME/provision_development_env.sh
