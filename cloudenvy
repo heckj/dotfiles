@@ -1,47 +1,7 @@
-# Modify this config and place it at ~/.cloudenvy or as .cloudenvy in the
-# base of one of your projects.
-# To use a different config, specify a CLOUDENVY_CONFIG env variable.
-
-[DEFAULT]
-# The keypair to use for new instances, defaults to your current login name.
-keypair_name=heckj
-
-# The public key to use if the keypair above does not exist, defaults
-# to ~/.ssh/id_rsa.pub
-keypair_location=/home/heckj/.ssh/id_dsa.pub
-
-
-# This is the default cloud name, if you want to use multiple
-# cloud environments you should duplicate this section and define new values.
-[cloud:envy]
-
-# Typical novaclient configuration
-OS_AUTH_URL=http://proxy.env4.mview.int.nebula.com:8070/v2.0
-OS_USERNAME=heckj
-OS_PASSWORD=eojcc
-OS_TENANT_NAME=heckj-project
-OS_TENANT_ID=225da22d3ce34b15877ea70b2a575f58
-
-
-# This is the default template name, if you want to use multiple
-# instance templates you should duplicate this section and define new values.
-[template:envy]
-# Image name to use for new instance
-image_name=Ubuntu 11.10 cloudimg amd64
-
-# Security group to use for the new instance.
-# If it does not exist it will be created with a fairly open set of rules.
-#   ('icmp', -1, -1, '0.0.0.0/0'),
-#   ('tcp', 22, 22, '0.0.0.0/0'),
-#   ('tcp', 443, 443, '0.0.0.0/0'),
-#   ('tcp', 80, 80, '0.0.0.0/0'),
-#   ('tcp', 8080, 8080, '0.0.0.0/0'),
-#   ('tcp', 5000, 5000, '0.0.0.0/0'),
-#   ('tcp', 9292, 9292, '0.0.0.0/0'),
-#sec_group_name=default
-
-# Flavor name to use for new instance.
-flavor_name=m1.small
-
-# Assign a floating IP to this instance.
-assign_floating_ip=True
+cloudenvy:
+  clouds:
+    env4:
+      os_auth_url: http://proxy.env4.mview.int.nebula.com:8770/v2.0/
+      os_username: heckj
+      os_password: eojcc
+      os_tenant_name: heckj-project
