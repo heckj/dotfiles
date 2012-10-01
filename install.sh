@@ -33,6 +33,7 @@ rm -rf $HOME/.gitconfig
 rm -rf $HOME/.pylintrc
 rm -f  $HOME/update.bash
 rm -f  $HOME/Envyfile
+rm -f  $HOME/provision_development_env.sh
 
 ln -s `pwd`/vim/vim $HOME/.vim
 ln -s `pwd`/vim/vimrc $HOME/.vimrc
@@ -45,5 +46,6 @@ ln -s `pwd`/update.bash $HOME/update.bash
 ln -s `pwd`/pylintrc $HOME/.pylintrc
 ln -s `pwd`/cloudenvy $HOME/.cloudenvy
 ln -s `pwd`/Envyfile $HOME/Envyfile
+ln -s `pwd`/provision_development_env.sh $HOME/provision_development_env.sh
 
 touch $HOME/.vim/bundle/vim-markdown/doc/foo
