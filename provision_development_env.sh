@@ -11,7 +11,8 @@ EOF
 # Install git and clone my dotfiles
 sudo apt-get install -y git
 git clone https://github.com/heckj/dotfiles.git
-cd dotfiles
 
 # Run individual provision scripts.
+pushd dotfiles
 ./install.sh
+popd
