@@ -10,10 +10,15 @@ EOF
 
 # Install git and clone my dotfiles
 sudo apt-get install -y git
+mkdir -p ~/src
+cd ~/src
 git clone https://github.com/heckj/dotfiles.git
 
 # Run individual provision scripts.
-pushd dotfiles
+
+cd ~/src/dotfiles
 ./install.sh
 ./packagework.sh
-popd
+
+cd ~
+./update.bash
