@@ -15,4 +15,5 @@ git clone https://github.com/heckj/dotfiles.git
 # Run individual provision scripts.
 pushd dotfiles
 ./install.sh
+./packagework.sh
 popd

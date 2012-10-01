@@ -5,11 +5,15 @@ if [ `uname -s` == "Linux" ]; then
     if grep -q "Ubuntu" /etc/issue; then
         ENVSETUPENV="Ubuntu"
         # go ahead and install a vim with everything compiled in
+        sudo apt-get update
+        sudo apt-get dist-upgrade -y
         sudo apt-get install -y vim-gnome exuberant-ctags ack-grep python-pip
     fi
     if grep -q "Linux Mint" /etc/issue; then
         ENVSETUPENV="Ubuntu"
         # go ahead and install a vim with everything compiled in
+        sudo apt-get update
+        sudo apt-get dist-upgrade -y
         sudo apt-get install -y vim-gnome exuberant-ctags ack-grep python-pip
     fi
 elif [ `uname -s` == "Darwin" ]; then
