@@ -48,7 +48,7 @@
     ignore = dirty
 [submodule "vim/vim/bundle/pyflakes-vim"]
     path = vim/vim/bundle/pyflakes-vim
-    url = https://github.com/kevinw/pyflakes-vim.git
+    url = https://github.com/heckj/pyflakes-vim.git
     ignore = dirty
 [submodule "vim/vim/bundle/vim-taglist"]
     path = vim/vim/bundle/vim-taglist
