@@ -17,7 +17,7 @@ if [ `uname -s` == "Linux" ]; then
         sudo apt-get install -y vim-gnome exuberant-ctags ack-grep python-pip
     fi
 elif [ `uname -s` == "Darwin" ]; then
-    sudo brew install ctags ack
+    brew install ctags ack
     sudo easy_install pip
 else
     echo Unknown environment.
