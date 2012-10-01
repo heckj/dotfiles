@@ -162,4 +162,5 @@ git_clone_or_pull zombie git@github.com:termie/zombie.git
 
 # export maestro latest for reading offline
 mkdir -p ~/Dropbox/nebula/src/maestro
+cd ~/src/maestro
 git archive master | tar -x -C ~/Dropbox/nebula/src/maestro
