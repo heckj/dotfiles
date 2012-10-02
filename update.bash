@@ -69,6 +69,7 @@ git_clone_or_pull packman-tools git@github.com:4P/packman-tools.git
 
 git_clone_or_pull bp-issues https://github.com/ttx/bp-issues.git
 git_clone_or_pull devstack https://github.com/openstack-dev/devstack.git
+add_remote devstack heckj git@github.com:heckj/devstack.git
 
 git_clone_or_pull python-keystoneclient git@github.com:4P/python-keystoneclient
 add_remote python-keystoneclient openstack https://github.com/openstack/python-keystoneclient.git
