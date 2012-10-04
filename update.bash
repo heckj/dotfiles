@@ -52,15 +52,24 @@ git_clone_or_pull public-www git@github.com:4P/public-www.git
 git_clone_or_pull opencompute git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard git@github.com:4P/stashboard.git
 git_clone_or_pull alexandria git@github.com:4P/alexandria.git
-git_clone_or_pull taft git@github.com:4P/taft.git
 git_clone_or_pull intranet git@github.com:4P/intranet.git
-git_clone_or_pull python-warlock git@github.com:4P/python-warlock.git
-git_clone_or_pull python-jsonschema git@github.com:4P/python-jsonschema.git
 git_clone_or_pull nebstack git@github.com:4P/nebstack.git
 add_remote nebstack heckj git@github.com:heckj/nebstack.git
 git_clone_or_pull stackstack git@github.com:4P/stackstack.git
 git_clone_or_pull nebula_tools git@github.com:4P/nebula_tools.git
 git_clone_or_pull hardware_tools git@github.com:4P/hardware_tools.git
+git_clone_or_pull maestro git@github.com:4P/maestro.git
+git_clone_or_pull maestro-presence git@github.com:4P/maestro-presence.git
+git_clone_or_pull tools git@github.com:4P/tools.git
+add_remote tools heckj git@github.com:heckj/tools.git
+git_clone_or_pull nebulapki git@github.com:4P/nebulapki.git
+git_clone_or_pull initramfs-tools git@github.com:4P/initramfs-tools.git
+git_clone_or_pull ops git@github.com:4P/ops.git
+git_clone_or_pull python-maestroclient git@github.com:4P/python-maestroclient.git
+git_clone_or_pull lighthouse git@github.com:nebula/lighthouse.git
+git_clone_or_pull featuredash git@github.com:4P/FeatureDash.git
+git_clone_or_pull python-warlock git@github.com:4P/python-warlock.git
+git_clone_or_pull python-jsonschema git@github.com:4P/python-jsonschema.git
 
 git_clone_or_pull cloudenvy git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy bcwaldon https://github.com/bcwaldon/cloudenvy.git
@@ -122,15 +131,6 @@ add_remote keystone openstack https://github.com/openstack/keystone.git
 git_clone_or_pull django-openstack-auth git@github.com:4P/python-django-openstack-auth.git
 git_clone_or_pull nebula-dashboard git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull zookeeper git@github.com:4P/zookeeper.git
-git_clone_or_pull maestro git@github.com:4P/maestro.git
-git_clone_or_pull maestro-presence git@github.com:4P/maestro-presence.git
-git_clone_or_pull tools git@github.com:4P/tools.git
-add_remote tools heckj git@github.com:heckj/tools.git
-git_clone_or_pull nebulapki git@github.com:4P/nebulapki.git
-git_clone_or_pull initramfs-tools git@github.com:4P/initramfs-tools.git
-git_clone_or_pull ops git@github.com:4P/ops.git
-git_clone_or_pull python-maestroclient git@github.com:4P/python-maestroclient.git
-git_clone_or_pull featuredash git@github.com:4P/FeatureDash.git
 git_clone_or_pull sheepdog git@github.com:4P/sheepdog.git
 git_clone_or_pull eos git@github.com:4P/eos.git
 
