@@ -74,6 +74,8 @@ git_clone_or_pull python-jsonschema git@github.com:4P/python-jsonschema.git
 git_clone_or_pull cloudenvy git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy bcwaldon https://github.com/bcwaldon/cloudenvy.git
 
+git_clone_or_pull ocl git@github.com:4P/ocl.git
+
 git_clone_or_pull packman-tools git@github.com:4P/packman-tools.git
 
 git_clone_or_pull bp-issues https://github.com/ttx/bp-issues.git
