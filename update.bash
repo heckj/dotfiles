@@ -43,10 +43,10 @@ if [ -d ~/src/dotfiles/.git ]; then
   git remote -v
   git status
   git pull origin master
-  git pull devcamcar master
+  git fetch --all --prune
 else
   cd ~/src
-  git clone git@github.com:heckj/dotfiles.git
+  git clone -o heckj git@github.com:heckj/dotfiles.git
   cd dotfiles
   git remote add devcamcar git@github.com:devcamcar/dotfiles.git
 fi
