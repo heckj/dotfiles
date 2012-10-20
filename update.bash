@@ -90,6 +90,7 @@ add_remote devstack heckj git@github.com:heckj/devstack.git
 
 git_clone_or_pull python-keystoneclient 4P git@github.com:4P/python-keystoneclient
 add_remote python-keystoneclient openstack https://github.com/openstack/python-keystoneclient.git
+add_remote python-keystoneclient heckj git@github.com:heckj/python-keystoneclient.git
 
 git_clone_or_pull python-quantumclient 4P git@github.com:4P/python-quantumclient
 add_remote python-quantumclient openstack https://github.com/openstack/python-quantumclient.git
@@ -111,6 +112,7 @@ add_remote openstack-common openstack https://github.com/openstack/openstack-com
 
 git_clone_or_pull python-openstackclient 4P git@github.com:4P/python-openstackclient.git
 add_remote python-openstackclient openstack https://github.com/openstack/python-openstackclient.git
+add_remote python-openstackclient heckj git@github.com:heckj/python-openstackclient.git
 
 git_clone_or_pull python-cinderclient 4P git@github.com:4P/python-cinderclient.git
 add_remote python-cinderclient openstack https://github.com/openstack/python-cinderclient.git
@@ -135,6 +137,7 @@ add_remote horizon openstack https://github.com/openstack/horizon.git
 
 git_clone_or_pull keystone 4P git@github.com:4P/keystone.git
 add_remote keystone openstack https://github.com/openstack/keystone.git
+add_remote keystone heckj git@github.com:heckj/keystone.git
 
 git_clone_or_pull django-openstack-auth 4P git@github.com:4P/python-django-openstack-auth.git
 git_clone_or_pull nebula-dashboard 4P git@github.com:4P/nebula-dashboard.git
