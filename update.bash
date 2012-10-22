@@ -65,6 +65,7 @@ git_clone_or_pull stackstack 4P git@github.com:4P/stackstack.git
 git_clone_or_pull nebula_tools 4P git@github.com:4P/nebula_tools.git
 git_clone_or_pull hardware_tools 4P git@github.com:4P/hardware_tools.git
 git_clone_or_pull maestro 4P git@github.com:4P/maestro.git
+add_remote maestro heckj git@github.com:heckj/maestro.git
 git_clone_or_pull maestro-presence 4P git@github.com:4P/maestro-presence.git
 git_clone_or_pull tools 4P git@github.com:4P/tools.git
 add_remote tools heckj git@github.com:heckj/tools.git
