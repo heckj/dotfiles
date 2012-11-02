@@ -1,6 +1,6 @@
 cloudenvy:
   keypair_name: heckj
-  keypair_location: /home/heckj/.ssh/id_dsa.pub
+  keypair_location: ~heckj/.ssh/id_dsa.pub
 
   clouds:
     env4:
