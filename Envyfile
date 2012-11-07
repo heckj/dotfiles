@@ -1,7 +1,7 @@
 project_config:
   name: zergling
-  image: Ubuntu 11.10 cloudimg amd64
+  image: Ubuntu 12.04 cloudimg amd64
   remote_user: ubuntu
   flavor_name: m1.small
-  provision_script_path: './provision_development_env.sh'
-  auto_provision: True
+  provision_scripts:
+    - ./provision_development_env.sh
