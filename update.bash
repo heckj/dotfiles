@@ -80,6 +80,7 @@ git_clone_or_pull python-jsonschema 4P git@github.com:4P/python-jsonschema.git
 
 git_clone_or_pull cloudenvy heckj git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy cloudenvy https://github.com/cloudenvy/cloudenvy.git
+git_clone_or_pull envyfile-devstack cloudenvy https://github.com/cloudenvy/envyfile-devstack.git
 
 git_clone_or_pull ocl 4P git@github.com:4P/ocl.git
 
