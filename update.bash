@@ -110,8 +110,7 @@ add_remote python-swiftclient openstack https://github.com/openstack/python-swif
 git_clone_or_pull noVNC 4P git@github.com:4P/noVNC.git
 add_remote noVNC openstack https://github.com/openstack/noVNC
 
-git_clone_or_pull openstack-common 4P git@github.com:4P/openstack-common.git
-add_remote openstack-common openstack https://github.com/openstack/openstack-common.git
+git_clone_or_pull oslo openstack https://github.com/openstack/oslo.git
 
 git_clone_or_pull python-openstackclient 4P git@github.com:4P/python-openstackclient.git
 add_remote python-openstackclient openstack https://github.com/openstack/python-openstackclient.git
