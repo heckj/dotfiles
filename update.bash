@@ -86,6 +86,7 @@ git_clone_or_pull envyfile-devstack cloudenvy https://github.com/cloudenvy/envyf
 git_clone_or_pull ocl 4P git@github.com:4P/ocl.git
 
 git_clone_or_pull packman-tools 4P git@github.com:4P/packman-tools.git
+git_clone_or_pull nebula-release 4P git@github.com:4P/nebula-release.git
 
 git_clone_or_pull bp-issues ttx https://github.com/ttx/bp-issues.git
 git_clone_or_pull devstack openstack https://github.com/openstack-dev/devstack.git
