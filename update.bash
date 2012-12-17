@@ -149,8 +149,6 @@ git_clone_or_pull sheepdog 4P git@github.com:4P/sheepdog.git
 git_clone_or_pull eos 4P git@github.com:4P/eos.git
 
 git_clone_or_pull openstack-qa openstack https://github.com/openstack-dev/openstack-qa.git
-git_clone_or_pull openstack-ci openstack https://github.com/openstack/openstack-ci.git
-git_clone_or_pull openstack-ci-puppet openstack https://github.com/openstack/openstack-ci-puppet.git
 git_clone_or_pull tempest 4P git@github.com:4P/tempest.git
 add_remote tempest openstack https://github.com/openstack/tempest.git
 
