@@ -63,6 +63,7 @@ git_clone_or_pull nebstack 4P git@github.com:4P/nebstack.git
 add_remote nebstack heckj git@github.com:heckj/nebstack.git
 git_clone_or_pull stackstack 4P git@github.com:4P/stackstack.git
 git_clone_or_pull nebula_tools 4P git@github.com:4P/nebula_tools.git
+git_clone_or_pull nebula-tests 4P git@github.com:4P/nebula-tests.git
 git_clone_or_pull hardware_tools 4P git@github.com:4P/hardware_tools.git
 git_clone_or_pull maestro 4P git@github.com:4P/maestro.git
 git_clone_or_pull pisco 4P git@github.com:4P/pisco.git
