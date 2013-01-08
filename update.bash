@@ -67,8 +67,9 @@ git_clone_or_pull nebula-tests 4P git@github.com:4P/nebula-tests.git
 git_clone_or_pull anvil 4P git@github.com:4P/anvil.git
 git_clone_or_pull hardware_tools 4P git@github.com:4P/hardware_tools.git
 git_clone_or_pull maestro 4P git@github.com:4P/maestro.git
-git_clone_or_pull pisco 4P git@github.com:4P/pisco.git
 add_remote maestro heckj git@github.com:heckj/maestro.git
+git_clone_or_pull pisco 4P git@github.com:4P/pisco.git
+add_remote pisco heckj git@github.com:heckj/pisco.git
 git_clone_or_pull maestro-presence 4P git@github.com:4P/maestro-presence.git
 git_clone_or_pull tools 4P git@github.com:4P/tools.git
 add_remote tools heckj git@github.com:heckj/tools.git
@@ -87,6 +88,7 @@ git_clone_or_pull envyfile-devstack cloudenvy https://github.com/cloudenvy/envyf
 
 git_clone_or_pull ocl 4P git@github.com:4P/ocl.git
 
+git_clone_or_pull packman 4P git@github.com:4P/packman.git
 git_clone_or_pull packman-tools 4P git@github.com:4P/packman-tools.git
 git_clone_or_pull nebula-release 4P git@github.com:4P/nebula-release.git
 
