@@ -112,4 +112,6 @@ fi
 
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-PYTHONDONTWRITEBYTECODE=True
+export PYTHONDONTWRITEBYTECODE=True
+export DEBEMAIL="joe.heck@nebula.com"
+export DEBFULLNAME="Joe Heck"
