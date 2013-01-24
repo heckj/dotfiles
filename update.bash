@@ -154,7 +154,9 @@ add_remote keystone heckj git@github.com:heckj/keystone.git
 git_clone_or_pull django-openstack-auth 4P git@github.com:4P/python-django-openstack-auth.git
 git_clone_or_pull nebula-dashboard 4P git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull zookeeper 4P git@github.com:4P/zookeeper.git
-git_clone_or_pull sheepdog 4P git@github.com:4P/sheepdog.git
+git_clone_or_pull kazoo origin https://github.com/python-zk/kazoo
+add_remote kazoo heckj git@github.com:heckj/kazoo.git
+
 git_clone_or_pull eos 4P git@github.com:4P/eos.git
 
 git_clone_or_pull openstack-qa openstack https://github.com/openstack-dev/openstack-qa.git
