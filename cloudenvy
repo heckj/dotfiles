@@ -8,3 +8,24 @@ cloudenvy:
       os_username: heckj
       os_password: eojcc
       os_tenant_name: heckj-project
+      default: true
+    env8:
+      os_auth_url: http://proxy.env8.mview.int.nebula.com:8770/v2.0/
+      os_username: heckj
+      os_password: eojcc
+      os_tenant_name: heckj-project
+    env9:
+      os_auth_url: http://proxy.env9.mview.int.nebula.com:8770/v2.0/
+      os_username: heckj
+      os_password: eojcc
+      os_tenant_name: heckj-project
+    env10:
+      os_auth_url: http://proxy.env10.mview.int.nebula.com:8770/v2.0/
+      os_username: heckj
+      os_password: eojcc
+      os_tenant_name: heckj-project
+    env11:
+      os_auth_url: http://proxy.env11.mview.int.nebula.com:8770/v2.0/
+      os_username: heckj
+      os_password: eojcc
+      os_tenant_name: heckj-project
