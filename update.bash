@@ -171,6 +171,8 @@ git_clone_or_pull identity-api openstack https://github.com/openstack/identity-a
 git_clone_or_pull openstack-manuals openstack https://github.com/openstack/openstack-manuals.git
 git_clone_or_pull openstack-org toddmorey https://github.com/toddmorey/openstack-org.git
 
+git_clone_or_pull envyfile-kibana git@github.com:4P/envyfile-kibana.git
+
 git_clone_or_pull fabric fabric git@github.com:fabric/fabric.git
 git_clone_or_pull benchmarker heckj git@github.com:heckj/benchmarker.git
 git_clone_or_pull doyen heckj git@github.com:heckj/doyen.git
