@@ -84,6 +84,7 @@ git_clone_or_pull lighthouse nebula git@github.com:nebula/lighthouse.git
 git_clone_or_pull featuredash 4P git@github.com:4P/FeatureDash.git
 git_clone_or_pull python-warlock 4P git@github.com:4P/python-warlock.git
 git_clone_or_pull python-jsonschema 4P git@github.com:4P/python-jsonschema.git
+git_clone_or_pull envyfile-kibana 4P git@github.com:4P/envyfile-kibana.git
 
 git_clone_or_pull cloudenvy heckj git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy cloudenvy https://github.com/cloudenvy/cloudenvy.git
@@ -171,7 +172,6 @@ git_clone_or_pull identity-api openstack https://github.com/openstack/identity-a
 git_clone_or_pull openstack-manuals openstack https://github.com/openstack/openstack-manuals.git
 git_clone_or_pull openstack-org toddmorey https://github.com/toddmorey/openstack-org.git
 
-git_clone_or_pull envyfile-kibana git@github.com:4P/envyfile-kibana.git
 
 git_clone_or_pull fabric fabric git@github.com:fabric/fabric.git
 git_clone_or_pull benchmarker heckj git@github.com:heckj/benchmarker.git
