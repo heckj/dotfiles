@@ -52,6 +52,7 @@ else
 fi
 
 git_clone_or_pull chef-ops 4P git@github.com:4P/chef-ops.git
+git_clone_or_pull logtools 4P git@github.com:4P/logtools.git
 git_clone_or_pull ipxe 4P git@github.com:4P/ipxe.git
 git_clone_or_pull arista 4P git@github.com:4P/arista.git
 git_clone_or_pull public-www 4P git@github.com:4P/public-www.git
