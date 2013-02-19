@@ -125,6 +125,8 @@ add_remote noVNC openstack https://github.com/openstack/noVNC
 
 git_clone_or_pull oslo-incubator openstack https://github.com/openstack/oslo-incubator.git
 
+git_clone_or_pull oslo-config openstack https://github.com/openstack/oslo-config.git
+
 git_clone_or_pull python-openstackclient 4P git@github.com:4P/python-openstackclient.git
 add_remote python-openstackclient openstack https://github.com/openstack/python-openstackclient.git
 add_remote python-openstackclient heckj git@github.com:heckj/python-openstackclient.git
