@@ -115,3 +115,6 @@ fi
 export PYTHONDONTWRITEBYTECODE=True
 export DEBEMAIL="joe.heck@nebula.com"
 export DEBFULLNAME="Joe Heck"
+eval `ssh-agent -s`
+ssh-add
+ssh-add ~/.ssh/id_rsa.dev
