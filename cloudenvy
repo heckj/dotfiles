@@ -23,7 +23,7 @@ cloudenvy:
       os_auth_url: http://proxy.env9.mview.int.nebula.com:8770/v2.0/
       os_username: heckj
       os_password: eojcc
-      os_tenant_name: heckj-project
+      os_tenant_name: heckj-Home
     env11:
       os_auth_url: http://proxy.env11.mview.int.nebula.com:8770/v2.0/
       os_username: heckj
