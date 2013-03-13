@@ -162,6 +162,8 @@ git_clone_or_pull zookeeper 4P git@github.com:4P/zookeeper.git
 git_clone_or_pull kazoo origin https://github.com/python-zk/kazoo
 add_remote kazoo heckj git@github.com:heckj/kazoo.git
 
+git_clone_or_pull jenkinstools 4P git@github.com:4P/jenkinstools.git
+
 git_clone_or_pull eos 4P git@github.com:4P/eos.git
 
 git_clone_or_pull openstack-qa openstack https://github.com/openstack-dev/openstack-qa.git
