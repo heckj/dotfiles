@@ -125,7 +125,7 @@ add_remote noVNC openstack https://github.com/openstack/noVNC
 
 git_clone_or_pull oslo-incubator openstack https://github.com/openstack/oslo-incubator.git
 
-git_clone_or_pull oslo-config openstack https://github.com/openstack/oslo-config.git
+git_clone_or_pull oslo.config openstack https://github.com/openstack/oslo.config.git
 
 git_clone_or_pull python-openstackclient 4P git@github.com:4P/python-openstackclient.git
 add_remote python-openstackclient openstack https://github.com/openstack/python-openstackclient.git
@@ -155,6 +155,12 @@ add_remote horizon openstack https://github.com/openstack/horizon.git
 git_clone_or_pull keystone 4P git@github.com:4P/keystone.git
 add_remote keystone openstack https://github.com/openstack/keystone.git
 add_remote keystone heckj git@github.com:heckj/keystone.git
+
+git_clone_or_pull ceilometer openstack git@github.com:openstack/ceilometer.git
+git_clone_or_pull python-ceilometerclient openstack git@github.com:openstack/python-ceilometerclient.git
+git_clone_or_pull heat openstack git@github.com:openstack/heat.git
+git_clone_or_pull python-heatclient openstack git@github.com:openstack/python-heatclient.git
+git_clone_or_pull heat-cfntools openstack git@github.com:openstack/heat-cfntools.git
 
 git_clone_or_pull django-openstack-auth 4P git@github.com:4P/python-django-openstack-auth.git
 git_clone_or_pull nebula-dashboard 4P git@github.com:4P/nebula-dashboard.git
