@@ -183,15 +183,8 @@ git_clone_or_pull identity-api openstack https://github.com/openstack/identity-a
 git_clone_or_pull openstack-manuals openstack https://github.com/openstack/openstack-manuals.git
 git_clone_or_pull openstack-org toddmorey https://github.com/toddmorey/openstack-org.git
 
-
 git_clone_or_pull fabric fabric git@github.com:fabric/fabric.git
 git_clone_or_pull benchmarker heckj git@github.com:heckj/benchmarker.git
 git_clone_or_pull doyen heckj git@github.com:heckj/doyen.git
 git_clone_or_pull stoplight 4P git@github.com:4P/stoplight.git
 git_clone_or_pull om heckj git@github.com:heckj/om.git
-git_clone_or_pull zombie termie git@github.com:termie/zombie.git
-
-# export maestro latest for reading offline
-mkdir -p ~/Dropbox/nebula/src/maestro
-cd ~/src/maestro
-git archive nebula-release/latest | tar -x -C ~/Dropbox/nebula/src/maestro
