@@ -54,7 +54,6 @@ fi
 git_clone_or_pull chef-ops 4P git@github.com:4P/chef-ops.git
 git_clone_or_pull logtools 4P git@github.com:4P/logtools.git
 git_clone_or_pull ipxe 4P git@github.com:4P/ipxe.git
-git_clone_or_pull arista 4P git@github.com:4P/arista.git
 git_clone_or_pull public-www 4P git@github.com:4P/public-www.git
 git_clone_or_pull opencompute 4P git@github.com:4P/opencompute.git
 git_clone_or_pull stashboard 4P git@github.com:4P/stashboard.git
@@ -169,8 +168,6 @@ git_clone_or_pull kazoo origin https://github.com/python-zk/kazoo
 add_remote kazoo heckj git@github.com:heckj/kazoo.git
 
 git_clone_or_pull jenkinstools 4P git@github.com:4P/jenkinstools.git
-
-git_clone_or_pull eos 4P git@github.com:4P/eos.git
 
 git_clone_or_pull openstack-qa openstack https://github.com/openstack-dev/openstack-qa.git
 git_clone_or_pull tempest 4P git@github.com:4P/tempest.git
