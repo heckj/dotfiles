@@ -120,7 +120,6 @@ git_clone_or_pull python-swiftclient 4P git@github.com:4P/python-swiftclient
 add_remote python-swiftclient openstack https://github.com/openstack/python-swiftclient.git
 
 git_clone_or_pull noVNC 4P git@github.com:4P/noVNC.git
-add_remote noVNC openstack https://github.com/openstack/noVNC
 
 git_clone_or_pull oslo-incubator openstack https://github.com/openstack/oslo-incubator.git
 

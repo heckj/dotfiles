@@ -4,13 +4,13 @@ cloudenvy:
 
   clouds:
     env10:
-      os_auth_url: http://proxy.env10.nebula.com:8770/v2.0/
+      os_auth_url: https://proxy.env10.nebula.com:8770/v2.0/
       os_username: heckj
       os_password: eojcc
       os_tenant_name: heckj-Home
       default: true
     env4:
-      os_auth_url: http://proxy.env4.nebula.com:8770/v2.0/
+      os_auth_url: https://proxy.env4.nebula.com:8770/v2.0/
       os_username: heckj
       os_password: eojcc
       os_tenant_name: heckj-Home
@@ -25,7 +25,7 @@ cloudenvy:
       os_password: eojcc
       os_tenant_name: heckj-Home
     env11:
-      os_auth_url: http://proxy.env11.nebula.com:8770/v2.0/
+      os_auth_url: https://proxy.env11.nebula.com:8770/v2.0/
       os_username: heckj
       os_password: eojcc
       os_tenant_name: heckj-Home
