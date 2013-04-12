@@ -85,6 +85,7 @@ git_clone_or_pull featuredash 4P git@github.com:4P/FeatureDash.git
 git_clone_or_pull python-warlock 4P git@github.com:4P/python-warlock.git
 git_clone_or_pull python-jsonschema 4P git@github.com:4P/python-jsonschema.git
 git_clone_or_pull envyfile-kibana 4P git@github.com:4P/envyfile-kibana.git
+git_clone_or_pull release-signing-livecd 4P git@github.com:4P/release-signing-livecd.git
 
 git_clone_or_pull cloudenvy heckj git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy cloudenvy https://github.com/cloudenvy/cloudenvy.git
