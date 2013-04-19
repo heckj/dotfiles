@@ -90,6 +90,7 @@ git_clone_or_pull release-signing-livecd 4P git@github.com:4P/release-signing-li
 git_clone_or_pull cloudenvy heckj git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy cloudenvy https://github.com/cloudenvy/cloudenvy.git
 git_clone_or_pull envyfile-devstack cloudenvy https://github.com/cloudenvy/envyfile-devstack.git
+git_clone_or_pull envyfile-openstack-docs heckj git@github.com:heckj/envyfile-openstack-docs.git
 
 git_clone_or_pull logtools 4P git@githom.com:4P/logtools.git
 git_clone_or_pull ubuntu_i.mx6.mxm 4P git@github.com:4P/ubuntu_i.mx6.mxm.git
