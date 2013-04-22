@@ -2,13 +2,13 @@ cloudenvy:
   keypair_name: heckj
   keypair_location: ~heckj/.ssh/id_dsa.pub
 
+  default_cloud: env9
   clouds:
     env10:
       os_auth_url: https://proxy.env10.nebula.com:8770/v2.0/
       os_username: heckj
       os_password: eojcc
       os_tenant_name: heckj-Home
-      default: true
     env4:
       os_auth_url: https://proxy.env4.nebula.com:8770/v2.0/
       os_username: heckj
