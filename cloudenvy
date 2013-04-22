@@ -2,6 +2,7 @@ cloudenvy:
   keypair_name: heckj
   keypair_location: ~heckj/.ssh/id_dsa.pub
 
+  forward_agent: true
   default_cloud: env9
   clouds:
     env10:
