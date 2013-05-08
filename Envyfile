@@ -1,6 +1,6 @@
 project_config:
   name: zergling
-  image: Ubuntu 12.04 cloudimg amd64
+  image: Ubuntu 12.04
   remote_user: ubuntu
   flavor_name: n1.large
   provision_scripts:
