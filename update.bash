@@ -192,3 +192,5 @@ git_clone_or_pull benchmarker heckj git@github.com:heckj/benchmarker.git
 git_clone_or_pull doyen heckj git@github.com:heckj/doyen.git
 git_clone_or_pull stoplight 4P git@github.com:4P/stoplight.git
 git_clone_or_pull om heckj git@github.com:heckj/om.git
+git_clone_or_pull t5 origin git@github.com:makhidkarun/t5.git
+git_clone_or_pull leadsled heckj git@github.com:heckj/leadsled.git
