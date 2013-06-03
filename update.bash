@@ -165,7 +165,11 @@ add_remote keystone heckj git@github.com:heckj/keystone.git
 git_clone_or_pull ceilometer openstack git@github.com:openstack/ceilometer.git
 git_clone_or_pull python-ceilometerclient openstack git@github.com:openstack/python-ceilometerclient.git
 git_clone_or_pull heat openstack git@github.com:openstack/heat.git
+add_remote heat 4P git@github.com:4P/heat.git
+
 git_clone_or_pull python-heatclient openstack git@github.com:openstack/python-heatclient.git
+add_remote python-heatclient 4P git@github.com:4P/python-heatclient.git
+
 git_clone_or_pull heat-cfntools openstack git@github.com:openstack/heat-cfntools.git
 
 git_clone_or_pull django-openstack-auth 4P git@github.com:4P/python-django-openstack-auth.git
