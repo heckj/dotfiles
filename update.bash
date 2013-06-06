@@ -101,6 +101,7 @@ git_clone_or_pull python-zipkin 4P git@github.com:4P/python-zipkin.git
 git_clone_or_pull tryfer 4P git@github.com:4P/tryfer.git
 git_clone_or_pull thrift 4P git@github.com:4P/thrift.git
 git_clone_or_pull scribe 4P git@github.com:4P/scribe.git
+git_clone_or_pull fb303 4P git@github.com:4P/fb303.git
 git_clone_or_pull tomograph heckj git@github.com:heckj/tomograph.git
 add_remote tomograph timjr git@github.com:timjr/tomograph.gim
 
