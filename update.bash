@@ -69,6 +69,7 @@ git_clone_or_pull hardware_tools 4P git@github.com:4P/hardware_tools.git
 git_clone_or_pull hidpub 4P git@github.com:4P/hidpub.git
 git_clone_or_pull u-boot 4P git@github.com:4P/u-boot.git
 git_clone_or_pull kernel-som 4P git@github.com:4P/kernel-som.git
+git_clone_or_pull nebula_common 4P git@github.com:4P/nebula_common.git
 git_clone_or_pull maestro 4P git@github.com:4P/maestro.git
 add_remote maestro heckj git@github.com:heckj/maestro.git
 git_clone_or_pull pisco 4P git@github.com:4P/pisco.git
