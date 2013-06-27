@@ -25,4 +25,4 @@
 [gitreview]
     username = heckj
 [push]
-	default = simple
+	default = matching
