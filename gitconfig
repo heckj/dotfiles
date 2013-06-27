@@ -24,3 +24,5 @@
     review = push gerrit HEAD:refs/for/master
 [gitreview]
     username = heckj
+[push]
+	default = simple
