@@ -87,6 +87,7 @@ git_clone_or_pull python-warlock 4P git@github.com:4P/python-warlock.git
 git_clone_or_pull python-jsonschema 4P git@github.com:4P/python-jsonschema.git
 git_clone_or_pull envyfile-kibana 4P git@github.com:4P/envyfile-kibana.git
 git_clone_or_pull envyfile-graphite heckj git@github.com:heckj/envyfile-graphite.git
+git_clone_or_pull envyfile-postfixrelay 4P git@github.com:4P/envyfile-postfixrelay.git
 git_clone_or_pull release-signing-livecd 4P git@github.com:4P/release-signing-livecd.git
 git_clone_or_pull install_wizard 4P git@github.com:4P/install-wizard.git
 git_clone_or_pull cloud_backup 4P git@github.com:4P/cloud-backup.git
