@@ -90,7 +90,8 @@ git_clone_or_pull envyfile-graphite heckj git@github.com:heckj/envyfile-graphite
 git_clone_or_pull envyfile-postfixrelay 4P git@github.com:4P/envyfile-postfixrelay.git
 git_clone_or_pull release-signing-livecd 4P git@github.com:4P/release-signing-livecd.git
 git_clone_or_pull install_wizard 4P git@github.com:4P/install-wizard.git
-git_clone_or_pull cloud_backup 4P git@github.com:4P/cloud-backup.git
+git_clone_or_pull cloud-backup 4P git@github.com:4P/cloud-backup.git
+git_clone_or_pull changeling bcwaldon git@github.com:bcwaldon/changeling.git
 
 git_clone_or_pull cloudenvy heckj git@github.com:heckj/cloudenvy.git
 add_remote cloudenvy cloudenvy https://github.com/cloudenvy/cloudenvy.git
