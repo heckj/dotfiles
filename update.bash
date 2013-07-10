@@ -113,7 +113,8 @@ add_remote tomograph timjr git@github.com:timjr/tomograph.gim
 git_clone_or_pull packman 4P git@github.com:4P/packman.git
 git_clone_or_pull packman-tools 4P git@github.com:4P/packman-tools.git
 git_clone_or_pull nebula-release 4P git@github.com:4P/nebula-release.git
-git_clone_or_pull nebula-release-som 4P git@github.com:4P/nebula-release-som.git
+git_clone_or_pull nebula-release-som-armhf 4P git@github.com:4P/nebula-release-som-armhf.git
+git_clone_or_pull nebula-release-som-amd64 4P git@github.com:4P/nebula-release-som-amd64.git
 
 git_clone_or_pull bp-issues ttx https://github.com/ttx/bp-issues.git
 git_clone_or_pull devstack openstack https://github.com/openstack-dev/devstack.git
