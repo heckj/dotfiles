@@ -184,6 +184,7 @@ git_clone_or_pull django-openstack-auth 4P git@github.com:4P/python-django-opens
 git_clone_or_pull nebula-dashboard 4P git@github.com:4P/nebula-dashboard.git
 git_clone_or_pull zookeeper 4P git@github.com:4P/zookeeper.git
 git_clone_or_pull kazoo origin https://github.com/python-zk/kazoo
+add_remote kazoo 4P git@github.com:4P/kazoo.git
 add_remote kazoo heckj git@github.com:heckj/kazoo.git
 
 git_clone_or_pull jenkinstools 4P git@github.com:4P/jenkinstools.git
