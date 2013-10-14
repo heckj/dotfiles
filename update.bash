@@ -206,6 +206,7 @@ git_clone_or_pull js-maestroclient nebula git@github.com:nebula/js-maestroclient
 git_clone_or_pull js-openclient gabrielhurley git@github.com:gabrielhurley/js-openclient.git
 
 git_clone_or_pull hyperloop 4P git@github.com:4P/hyperloop.git
+git_clone_or_pull slam-swift 4P git@github.com:4P/slam-swift.git
 
 git_clone_or_pull fabric fabric git@github.com:fabric/fabric.git
 git_clone_or_pull benchmarker heckj git@github.com:heckj/benchmarker.git
