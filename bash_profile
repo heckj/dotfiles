@@ -103,7 +103,7 @@ export ARCHFLAGS="-arch i386 -arch x86_64"
 if [ -s ~/bin/mvim ]; then
     alias vi='~/bin/mvim -v'
 fi
-export PIP_DOWNLOAD_CACHE=~/cache/pip
+export PIP_DOWNLOAD_CACHE=~/.pip/cache
 
 # Enable git command line completion.
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
