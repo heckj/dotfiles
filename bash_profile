@@ -95,8 +95,14 @@ fi
 export CLICOLOR=1
 export LSCOLORS=ExGxcxdxCxegedabagacad
 export EDITOR=/usr/bin/vim
-export GOROOT=/Users/heckj/src/go
-export PATH=/usr/local/bin:/usr/local/sbin:~/.ec2/bin:~/bin:$GOROOT/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:~/.ec2/bin:~/bin:$PATH
+if [ -d ~/.rvm/bin ]; then
+    export PATH="$PATH:$HOME/.rvm/bin"
+fi
+if [ -d /usr/local/heroku/bin ]; then
+    ### Added for he Heroku Toolbelt
+    export PATH="/usr/local/heroku/bin:$PATH"
+fi
 export MANPATH=$MANPATH:/opt/local/share/man
 export PIP_RESPECT_VIRTUALENV=true
 export ARCHFLAGS="-arch i386 -arch x86_64"
@@ -113,6 +119,7 @@ fi
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 #export PYTHONDONTWRITEBYTECODE=True
+export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 export DEBEMAIL="joe.heck@nebula.com"
 export DEBFULLNAME="Joe Heck"
 eval `ssh-agent -s`
