@@ -35,8 +35,3 @@ cloudenvy:
       os_username: heckj
       os_password: eojcc
       os_tenant_name: heckj-Home
-    env15:
-      os_auth_url: https://proxy.env15.nebula.com:8770/v2.0/
-      os_username: heckj
-      os_password: eojcc
-      os_tenant_name: heckj-Home
