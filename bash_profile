@@ -103,6 +103,9 @@ if [ -d /usr/local/heroku/bin ]; then
     ### Added for he Heroku Toolbelt
     export PATH="/usr/local/heroku/bin:$PATH"
 fi
+if [ -d /usr/local/Cellar/go/1.2 ]; then
+    export GOPATH=/usr/local/Cellar/go/1.2
+fi
 export MANPATH=$MANPATH:/opt/local/share/man
 export PIP_RESPECT_VIRTUALENV=true
 export ARCHFLAGS="-arch i386 -arch x86_64"
