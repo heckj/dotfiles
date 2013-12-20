@@ -105,14 +105,15 @@ if [ -d /usr/local/heroku/bin ]; then
 fi
 if [ -d /usr/local/Cellar/go/1.2 ]; then
     export GOPATH=/usr/local/Cellar/go/1.2
+    export PATH=$PATH:$GOPATH/bin
 fi
 export MANPATH=$MANPATH:/opt/local/share/man
-export PIP_RESPECT_VIRTUALENV=true
 export ARCHFLAGS="-arch i386 -arch x86_64"
 if [ -s ~/bin/mvim ]; then
     alias vi='~/bin/mvim -v'
 fi
 export PIP_DOWNLOAD_CACHE=~/.pip/cache
+export PIP_RESPECT_VIRTUALENV=true
 
 # Enable git command line completion.
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
