@@ -9,7 +9,8 @@ sudo apt-get install -y python3-all python3-setuptools
 sudo apt-get update
 sudo apt-get dist-upgrade -y
 # include bits for debian/ubuntu packaging
-sudo apt-get install -y javahelper pbuilder dh-make
+sudo apt-get install -y javahelper pbuilder pbuilder-dist dh-make
+sudo apt-get install -y devscripts python-all-dev python-stddeb
 sudo apt-get autoremove -y
 # pre-cache the pbuilder debbootstrap image
 sudo pbuilder create
