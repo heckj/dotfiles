@@ -12,9 +12,8 @@
 [github]
     user = heckj
 [alias]
-    ci = commit
+    down = pull --rebase
     st = status
-    co = checkout
     oneline = log --prety=oneline
     br = branch
     la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
