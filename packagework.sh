@@ -3,6 +3,8 @@ sudo pip install -U git-review
 # keystone development pieces...
 sudo apt-get install -y python-virtualenv python-dev libxslt1-dev
 sudo apt-get install -y libldap2-dev libsasl2-dev
+sudo apt-get install -y python-all python-setuptools
+sudo apt-get install -y python3-all python3-setuptools
 # general 'make sure it's up to date'
 sudo apt-get update
 sudo apt-get dist-upgrade -y
