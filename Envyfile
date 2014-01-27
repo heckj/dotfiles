@@ -1,6 +1,6 @@
 project_config:
   name: zergling
-  image: Ubuntu 12.04
+  image: Ubuntu 13.10
   remote_user: ubuntu
   flavor_name: n1.small
   provision_scripts:
