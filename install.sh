@@ -27,7 +27,8 @@ else
 fi
 
 # Install python dependencies
-sudo pip install pep8 pyflakes cloudenvy
+sudo pip install -U pep8 pyflakes
+sudo pip install -U virtualenv
 
 # Initialize and pull git submodules
 git submodule update --init --recursive
@@ -40,6 +41,7 @@ rm -f  $HOME/.gitconfig
 rm -f  $HOME/.pylintrc
 rm -f  $HOME/.cloudenvy
 rm -f  $HOME/update.bash
+rm -f  $HOME/latest.bash
 rm -f  $HOME/Envyfile
 rm -f  $HOME/provision_development_env.sh
 
@@ -51,6 +53,7 @@ ln -s `pwd`/bash_profile $HOME/.bash_profile
 ln -s `pwd`/bashrc $HOME/.bashrc
 ln -s `pwd`/gitconfig $HOME/.gitconfig
 ln -s `pwd`/update.bash $HOME/update.bash
+ln -s `pwd`/latest.bash $HOME/latest.bash
 ln -s `pwd`/pylintrc $HOME/.pylintrc
 ln -s `pwd`/Envyfile $HOME/Envyfile
 ln -s `pwd`/provision_development_env.sh $HOME/provision_development_env.sh
