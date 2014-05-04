@@ -153,5 +153,5 @@ else
 fi
 
 export PATH=$PATH:"/Applications/microchip/xc8/v1.30/bin"
-
 export PATH=$PATH:"/Applications/microchip/xc16/v1.21/bin"
+export PATH=$PATH:/Users/heckj/.chefdk/gem/ruby/2.1.0/bin
