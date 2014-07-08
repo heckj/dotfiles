@@ -8,6 +8,7 @@ npm -g update
 
 heroku update
 
-rvm repair all
+rvm get stable
+rvm cleanup all
 
 gem update
