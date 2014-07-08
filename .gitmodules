@@ -42,10 +42,6 @@
     path = vim/vim/bundle/nerdtree
     url = https://github.com/vim-scripts/The-NERD-tree.git
     ignore = dirty
-[submodule "vim/vim/bundle/ropevim"]
-    path = vim/vim/bundle/ropevim
-    url = https://github.com/sontek/rope-vim.git
-    ignore = dirty
 [submodule "vim/vim/bundle/pyflakes-vim"]
     path = vim/vim/bundle/pyflakes-vim
     url = https://github.com/heckj/pyflakes-vim.git
@@ -71,5 +67,5 @@
     url = https://github.com/hallison/vim-markdown.git
     ignore = dirty
 [submodule "vim/vim/bundle/flake8"]
-	path = vim/vim/bundle/flake8
-	url = git@github.com:nvie/vim-flake8.git
+    path = vim/vim/bundle/flake8
+    url = https://github.com/nvie/vim-flake8.git
