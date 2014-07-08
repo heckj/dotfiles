@@ -9,6 +9,7 @@ if [ `uname -s` == "Linux" ]; then
         sudo apt-get dist-upgrade -y
         sudo apt-get install -y tmux
         sudo apt-get install -y vim-gnome exuberant-ctags ack-grep python-pip
+        ssh-keyscan github.com
     fi
     if grep -q "Linux Mint" /etc/issue; then
         ENVSETUPENV="Ubuntu"
@@ -17,10 +18,12 @@ if [ `uname -s` == "Linux" ]; then
         sudo apt-get dist-upgrade -y
         sudo apt-get install -y tmux
         sudo apt-get install -y vim-gnome exuberant-ctags ack-grep python-pip
+        ssh-keyscan github.com
     fi
 elif [ `uname -s` == "Darwin" ]; then
     brew install ctags ack
     sudo easy_install pip
+    ssh-keyscan github.com
 else
     echo Unknown environment.
     exit
