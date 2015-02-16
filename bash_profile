@@ -103,17 +103,17 @@ if [ -d /usr/local/heroku/bin ]; then
     ### Added for he Heroku Toolbelt
     export PATH="/usr/local/heroku/bin:$PATH"
 fi
-if [ -d /usr/local/Cellar/go/1.2 ]; then
-    export GOPATH=/usr/local/Cellar/go/1.2
+if [ -d /usr/local/Cellar/go/1.4.1 ]; then
+    export GOPATH=/usr/local/Cellar/go/1.4.1
     export PATH=$PATH:$GOPATH/bin
 fi
 export MANPATH=$MANPATH:/opt/local/share/man
-export ARCHFLAGS="-arch i386 -arch x86_64"
 if [ -s ~/bin/mvim ]; then
     alias vi='~/bin/mvim -v'
 fi
 export PIP_DOWNLOAD_CACHE=~/.pip/cache
 export PIP_RESPECT_VIRTUALENV=true
+#export PYTHONDONTWRITEBYTECODE=True
 
 # Enable git command line completion.
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
@@ -122,8 +122,6 @@ fi
 
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-#export PYTHONDONTWRITEBYTECODE=True
-export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 export DEBEMAIL="joseph.heck@renasar.com"
 export DEBFULLNAME="Joe Heck"
 
