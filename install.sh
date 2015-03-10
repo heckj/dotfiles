@@ -33,6 +33,12 @@ fi
 sudo pip install -U pep8 pyflakes
 sudo pip install -U virtualenv
 
+git clone https://github.com/milkbikis/powerline-shell
+cp config.py powerline-shell/config.py
+pushd powerline-shell
+./install.py
+popd
+
 # Initialize and pull git submodules
 git submodule update --init --recursive
 

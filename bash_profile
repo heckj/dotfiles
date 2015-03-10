@@ -25,63 +25,11 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-    xterm-*color) color_prompt=yes;;
-esac
-
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
-force_color_prompt=yes
-
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-        # We have color support; assume it's compliant with Ecma-48
-        # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-        # a case would tend to support setf rather than setaf.)
-        color_prompt=yes
-    else
-        color_prompt=
-    fi
-fi
-
-function git_branch {
-  git branch --no-color 2> /dev/null | egrep '^\*' | sed -e 's/^* //'
+function _update_ps1() {
+    export PS1="$(~/src/dotfiles/powerline-shell.py $? 2> /dev/null)"
 }
 
-function git_dirty {
-  # only tracks modifications, not unknown files needing adds
-    if [ -z "`git status -s | awk '{print $1}' | grep '[ADMT]'`" ] ; then
-        return 1
-    else
-        return 0
-    fi
-}
-
-function dirty_git_prompt {
-    branch=`git_branch`
-    if [ -z "${branch}" ] ; then
-        return
-    fi
-    git_dirty && echo " (${branch})"
-}
-
-function clean_git_prompt {    branch=`git_branch`
-    if [ -z "${branch}" ] ; then
-        return
-    fi
-    git_dirty || echo " (${branch})"
-}
-
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00
-m\]\[\033[01;31m\]$(dirty_git_prompt)\[\033[01;32m\]$(clean_git_prompt)\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w $(git_branch)\$ '
-fi
-
-unset color_prompt force_color_prompt
+export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -103,8 +51,8 @@ if [ -d /usr/local/heroku/bin ]; then
     ### Added for he Heroku Toolbelt
     export PATH="/usr/local/heroku/bin:$PATH"
 fi
-if [ -d /usr/local/Cellar/go/1.4.1 ]; then
-    export GOPATH=/usr/local/Cellar/go/1.4.1
+if [ -d /usr/local/opt/go ]; then
+    export GOPATH=/usr/local/opt/go/libexec
     export PATH=$PATH:$GOPATH/bin
 fi
 export MANPATH=$MANPATH:/opt/local/share/man
@@ -122,7 +70,7 @@ fi
 
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export DEBEMAIL="joseph.heck@renasar.com"
+export DEBEMAIL="joseph.heck@emc.com"
 export DEBFULLNAME="Joe Heck"
 
 # borrowed from
