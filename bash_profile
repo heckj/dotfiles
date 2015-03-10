@@ -26,7 +26,7 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 function _update_ps1() {
-    export PS1="$(~/src/dotfiles/powerline-shell.py $? 2> /dev/null)"
+    export PS1="$(~/src/dotfiles/powerline-shell/powerline-shell.py $? 2> /dev/null)"
 }
 
 export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
