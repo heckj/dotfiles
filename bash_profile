@@ -98,5 +98,10 @@ else
     start_agent;
 fi
 
+export NVM_DIR=~/.nvm
+
+if [ -f /usr/local/opt/nvm/nvm.sh ]; then
+    source /usr/local/opt/nvm/nvm.sh
+fi
 # use locally installed node module tooling
 export PATH=$PATH:"./node_modules/.bin"
