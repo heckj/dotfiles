@@ -51,10 +51,17 @@ if [ -d /usr/local/heroku/bin ]; then
     ### Added for he Heroku Toolbelt
     export PATH="/usr/local/heroku/bin:$PATH"
 fi
+
+mkdir -p ~/.go
+mkdir -p ~/.go/src
+mkdir -p ~/.go/pkg
+mkdir -p ~/.go/bin
 if [ -d /usr/local/opt/go ]; then
-    export GOPATH=/usr/local/opt/go/libexec
-    export PATH=$PATH:$GOPATH/bin
+    export GOROOT=/usr/local/opt/go/libexec
+    export PATH=$PATH:$GOROOT/bin
+    export GOPATH=~/.go
 fi
+
 export MANPATH=$MANPATH:/opt/local/share/man
 if [ -s ~/bin/mvim ]; then
     alias vi='~/bin/mvim -v'

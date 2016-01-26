@@ -26,7 +26,14 @@
 [push]
     default = matching
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
 [core]
-	autocrlf = input
+    autocrlf = input
+    excludesfile = /Users/heckj/.gitignore_global
+[url "https://"]
+    insteadOf = git://
+[http]
+    sslVerify = false
+[credential]
+    helper = store
