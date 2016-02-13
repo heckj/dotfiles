@@ -50,11 +50,19 @@ else
   cd dotfiles
 fi
 
-git_clone_or_pull envyfile-graphite heckj git@github.com:heckj/envyfile-graphite.git
+if [ -x /usr/local/bin/apm ]; then
+    apm upgrade -y
+fi
 
-git_clone_or_pull cloudenvy heckj git@github.com:heckj/cloudenvy.git
-add_remote cloudenvy cloudenvy https://github.com/cloudenvy/cloudenvy.git
-git_clone_or_pull envyfile-devstack cloudenvy https://github.com/cloudenvy/envyfile-devstack.git
+if [ -x /usr/local/bin/brew ]; then
+    brew update && brew upgrade && brew prune && brew cleanup
+fi
 
-git_clone_or_pull om heckj git@github.com:heckj/om.git
-git_clone_or_pull t5 origin git@github.com:makhidkarun/t5.git
+#git_clone_or_pull envyfile-graphite heckj git@github.com:heckj/envyfile-graphite.git
+
+#git_clone_or_pull cloudenvy heckj git@github.com:heckj/cloudenvy.git
+#add_remote cloudenvy cloudenvy https://github.com/cloudenvy/cloudenvy.git
+#git_clone_or_pull envyfile-devstack cloudenvy https://github.com/cloudenvy/envyfile-devstack.git
+
+#git_clone_or_pull om heckj git@github.com:heckj/om.git
+#git_clone_or_pull t5 origin git@github.com:makhidkarun/t5.git

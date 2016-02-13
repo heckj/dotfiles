@@ -24,13 +24,13 @@ elif [ `uname -s` == "Darwin" ]; then
     brew install ctags ack
     sudo easy_install pip
     ssh-keyscan github.com
+    brew install nvm
 else
     echo Unknown environment.
     exit
 fi
 
 # Install python dependencies
-sudo pip install -U pep8 pyflakes
 sudo pip install -U virtualenv
 
 git clone https://github.com/milkbikis/powerline-shell
