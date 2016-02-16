@@ -112,3 +112,7 @@ if [ -f /usr/local/opt/nvm/nvm.sh ]; then
 fi
 # use locally installed node module tooling
 export PATH=$PATH:"./node_modules/.bin"
+
+if [ -f /usr/local/bin/direnv ]; then
+    eval "$(direnv hook bash)"
+fi
