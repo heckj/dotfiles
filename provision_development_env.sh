@@ -5,7 +5,7 @@ cat<<EOF | sudo tee ~/.ssh/config
 Host *
   StrictHostKeyChecking no
   UserKnownHostsFile /dev/null
-  User ubuntu
+  User vagrant
 EOF
 
 # Install git and clone my dotfiles
