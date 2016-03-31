@@ -1,6 +1,8 @@
-Install rope and exuberant-ctags:
+heckj's dotfiles setup for terminal based development:
 
-OSX:
+To use:
 
-pip install rope ropemode
-brew install ctags-exuberant
+    git clone https://github.com/heckj/dotfiles
+    cd dotfiles
+    ./install.bash
+    
