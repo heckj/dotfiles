@@ -6,3 +6,4 @@ vim/vim/bundle/pydiction
 vim/vim/bundle/snipmate
 vim/vim/bundle/vim-taglist
 powerline-shell
+.vagrant
