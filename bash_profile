@@ -58,8 +58,8 @@ mkdir -p ~/.go/pkg
 mkdir -p ~/.go/bin
 if [ -d /usr/local/opt/go ]; then
     export GOROOT=/usr/local/opt/go/libexec
-    export PATH=$PATH:$GOROOT/bin
     export GOPATH=~/.go
+    export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 fi
 
 export MANPATH=$MANPATH:/opt/local/share/man
