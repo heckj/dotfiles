@@ -56,11 +56,8 @@ mkdir -p ~/.go
 mkdir -p ~/.go/src
 mkdir -p ~/.go/pkg
 mkdir -p ~/.go/bin
-if [ -d /usr/local/opt/go ]; then
-    export GOROOT=/usr/local/opt/go/libexec
-    export GOPATH=~/.go
-    export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-fi
+export GOPATH=~/.go
+export PATH=$PATH:$GOPATH/bin
 
 export MANPATH=$MANPATH:/opt/local/share/man
 if [ -s ~/bin/mvim ]; then
@@ -77,7 +74,7 @@ fi
 
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export DEBEMAIL="joseph.heck@emc.com"
+export DEBEMAIL="heckj@mac.com"
 export DEBFULLNAME="Joe Heck"
 
 # borrowed from
@@ -94,7 +91,6 @@ function start_agent {
 }
 
 # Source SSH settings, if applicable
-
  if [ -f "${SSH_ENV}" ]; then
      . "${SSH_ENV}" > /dev/null
      #ps ${SSH_AGENT_PID} doesn't work under cywgin
@@ -110,8 +106,6 @@ export NVM_DIR=~/.nvm
 if [ -f /usr/local/opt/nvm/nvm.sh ]; then
     source /usr/local/opt/nvm/nvm.sh
 fi
-# use locally installed node module tooling
-export PATH=$PATH:"./node_modules/.bin"
 
 if [ -f /usr/local/bin/direnv ]; then
     eval "$(direnv hook bash)"
