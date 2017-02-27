@@ -110,3 +110,7 @@ fi
 if [ -f /usr/local/bin/direnv ]; then
     eval "$(direnv hook bash)"
 fi
+
+if [ -f /usr/libexec/java_home ]; then
+    export JAVA_HOME=$(/usr/libexec/java_home)
+fi
