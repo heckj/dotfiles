@@ -57,7 +57,8 @@ mkdir -p ~/.go/src
 mkdir -p ~/.go/pkg
 mkdir -p ~/.go/bin
 export GOPATH=~/.go
-export PATH=$PATH:$GOPATH/bin
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 export MANPATH=$MANPATH:/opt/local/share/man
 if [ -s ~/bin/mvim ]; then
@@ -120,3 +121,4 @@ if [ -f '/Users/heckj/bin/google-cloud-sdk/path.bash.inc' ]; then source '/Users
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/heckj/bin/google-cloud-sdk/completion.bash.inc'; fi
+
