@@ -3,12 +3,6 @@ brew update
 brew upgrade
 brew doctor
 
-npm -g update npm
-npm -g update
+nvm install stable
 
 heroku update
-
-rvm get stable
-rvm cleanup all
-
-gem update
