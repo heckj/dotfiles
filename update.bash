@@ -32,6 +32,21 @@ function add_remote {
   git status
 }
 
+function force_sync {
+  # $1 == dirname
+  # assumes that your local fork is at origin, and there is a remote
+  # named "upstream" with the upstream sources
+  # DOES NOT ASK QUESTIONS, WILL KILL LOCAL WORK
+  if [ -d $1/.git ]; then
+    cd $1
+    git checkout master
+    git reset --hard origin/master
+    git fetch --all --prune
+    git rebase upstream/master
+    git push origin master
+fi
+}
+
 echo " ======================================= "
 echo "             GITHUB (myself)             "
 echo " ======================================= "
@@ -58,6 +73,12 @@ if [ -x /usr/local/bin/brew ]; then
     brew update && brew upgrade && brew prune && brew cleanup
 fi
 
+if [ -x /usr/local/bin/heroku ]; then
+  heroku update
+fi
+
+force_sync ~/src/website
+force_sync $GOPATH/src/k8s.io/kubernetes
 
 #git_clone_or_pull om heckj git@github.com:heckj/om.git
 #git_clone_or_pull t5 origin git@github.com:makhidkarun/t5.git
