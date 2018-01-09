@@ -1,0 +1,16 @@
+DavidAnson.vscode-markdownlint
+PeterJausovec.vscode-docker
+brendandburns.vs-kubernetes
+dbaeumer.vscode-eslint
+deerawan.vscode-dash
+donjayamanne.githistory
+eamodio.gitlens
+eg2.vscode-npm-script
+ipedrazas.kubernetes-snippets
+lukehoban.Go
+magicstack.MagicPython
+ms-python.python
+ms-vscode.azure-account
+pkosta2005.heroku-command
+robertohuertasm.vscode-icons
+tht13.python
