@@ -21,14 +21,12 @@
     fulllog = log --graph --decorate=full --date=short
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     review = push gerrit HEAD:refs/for/master
-[gitreview]
-    username = heckj
 [push]
     default = matching
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+    required = true
+    clean = git media clean %f
+    smudge = git media smudge %f
 [core]
     autocrlf = input
     excludesfile = /Users/heckj/.gitignore_global
@@ -39,7 +37,7 @@
 [credential]
     helper = store
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process

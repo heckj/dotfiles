@@ -5,7 +5,6 @@ cat<<EOF | sudo tee ~/.ssh/config
 Host *
   StrictHostKeyChecking no
   UserKnownHostsFile /dev/null
-  User vagrant
 EOF
 
 # Install git and clone my dotfiles
@@ -22,3 +21,4 @@ cd ~/src/dotfiles
 
 cd ~
 ./update.bash
+./golang_setup.sh

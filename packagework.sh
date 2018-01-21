@@ -1,5 +1,4 @@
 sudo pip install -U git-sweep
-sudo pip install -U git-review
 # keystone development pieces...
 sudo apt-get install -y python-virtualenv python-dev libxslt1-dev
 sudo apt-get install -y libldap2-dev libsasl2-dev
