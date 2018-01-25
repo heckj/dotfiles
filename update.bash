@@ -78,6 +78,7 @@ if [ -x /usr/local/bin/heroku ]; then
 fi
 
 force_sync ~/src/website
+force_sync ~/src/minikube
 force_sync $GOPATH/src/k8s.io/kubernetes
 
 #git_clone_or_pull om heckj git@github.com:heckj/om.git
