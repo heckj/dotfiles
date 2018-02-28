@@ -8,7 +8,7 @@ if [ `uname -s` == "Linux" ]; then
         sudo apt-get update
         sudo apt-get dist-upgrade -y
         sudo apt-get install -y tmux
-        sudo apt-get install -y vim-gnome exuberant-ctags ack-grep python-pip
+        sudo apt-get install -y vim-gnome exuberant-ctags ack-grep python3-pip
         ssh-keyscan github.com
     fi
 elif [ `uname -s` == "Darwin" ]; then
