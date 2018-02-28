@@ -28,12 +28,7 @@ npm install -g eslint
 # Install python dev tools
 sudo pip3 install -U virtualenv
 sudo pip3 install -U pylint
-
-git clone https://github.com/milkbikis/powerline-shell
-cp config.py powerline-shell/config.py
-pushd powerline-shell
-./install.py
-popd
+sudo pip3 install -U powerline-shell
 
 # Initialize and pull git submodules
 git submodule update --init --recursive
