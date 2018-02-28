@@ -52,6 +52,10 @@ if [ -d /usr/local/heroku/bin ]; then
     export PATH="/usr/local/heroku/bin:$PATH"
 fi
 
+if [ -d /usr/local/go/bin ]; then
+    export PATH="$PATH:/usr/local/go/bin"
+fi
+
 mkdir -p ~/.go
 mkdir -p ~/.go/src
 mkdir -p ~/.go/pkg

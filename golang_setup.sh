@@ -1,5 +1,10 @@
 #!/bin/bash
-
+if [ `uname -s` == "Linux" ]; then
+    curl -kfSL https://dl.google.com/go/go1.10.linux-amd64.tar.gz -o temp.tar.gz
+    sudo tar -C /usr/local -xzf temp.tar.gz
+    rm -f temp.tar.gz
+    export PATH=$PATH:/usr/local/go/bin
+fi
 if [ -f /usr/local/bin/apm ]; then
     apm update -y
     apm install -y go-plus go-imports go-rename file-icons
