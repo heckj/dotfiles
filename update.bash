@@ -44,6 +44,8 @@ function force_sync {
     git fetch --all --prune
     git rebase upstream/master
     git push origin master
+    git gc
+    git prune
 fi
 }
 
