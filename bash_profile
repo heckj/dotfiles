@@ -116,13 +116,13 @@ if [ -f /usr/local/bin/direnv ]; then
     eval "$(direnv hook bash)"
 fi
 
-if [ -f /usr/libexec/java_home ]; then
+if [ -d /usr/libexec/java_home/bin ]; then
     export JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/heckj/bin/google-cloud-sdk/path.bash.inc' ]; then source '/Users/heckj/bin/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '${HOME}/bin/google-cloud-sdk/path.bash.inc' ]; then source '${HOME}/bin/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/heckj/bin/google-cloud-sdk/completion.bash.inc'; fi
-
+if [ -f '${HOME}/bin/google-cloud-sdk/completion.bash.inc' ]; then source '${HOME}/bin/google-cloud-sdk/completion.bash.inc'; fi
