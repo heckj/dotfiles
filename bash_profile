@@ -120,7 +120,6 @@ if [ -d /usr/libexec/java_home/bin ]; then
     export JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "${HOME}/bin/google-cloud-sdk/path.bash.inc" ]; then source "${HOME}/bin/google-cloud-sdk/path.bash.inc"; fi
 
