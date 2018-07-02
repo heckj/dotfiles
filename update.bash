@@ -81,7 +81,6 @@ fi
 
 force_sync ~/src/website
 force_sync ~/src/minikube
-force_sync ~/src/charts
 force_sync $GOPATH/src/k8s.io/kubernetes
 
 #git_clone_or_pull om heckj git@github.com:heckj/om.git
