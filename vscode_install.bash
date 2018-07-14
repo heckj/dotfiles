@@ -8,7 +8,6 @@ if [ -x /usr/local/bin/code ]; then
     code --install-extension deerawan.vscode-dash
     code --install-extension donjayamanne.githistory
     code --install-extension eamodio.gitlens
-    code --install-extension eg2.vscode-npm-script
     code --install-extension ipedrazas.kubernetes-snippets
     code --install-extension lukehoban.Go
     code --install-extension magicstack.MagicPython
@@ -17,6 +16,12 @@ if [ -x /usr/local/bin/code ]; then
     code --install-extension pkosta2005.heroku-command
     code --install-extension robertohuertasm.vscode-icons
     code --install-extension tht13.python
+    code --install-extension ms-vsliveshare.vsliveshare
+    code --install-extension christian-kohler.npm-intellisense
+    code --install-extension EditorConfig.EditorConfig
+    code --install-extension eg2.tslint
+    code --install-extension eg2.vscode-npm-script
+
 else
     echo "Visual Studio Code doesn't appear to be installed"
 fi
