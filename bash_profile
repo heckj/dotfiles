@@ -107,6 +107,8 @@ else
 fi
 
 export NVM_DIR=~/.nvm
+# to avoid using global js module installs...
+export PATH=node_modules/.bin:$PATH
 
 if [ -f /usr/local/opt/nvm/nvm.sh ]; then
     source /usr/local/opt/nvm/nvm.sh
