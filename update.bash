@@ -67,6 +67,11 @@ else
   cd dotfiles
 fi
 
+if [ -x $HOME/bin/google-cloud-sdk/bin/gcloud ]; then
+    echo "updating gcloud components"
+    gcloud components update --quiet
+fi
+
 if [ -x /usr/local/bin/apm ]; then
     apm upgrade -y
 fi

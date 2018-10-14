@@ -81,6 +81,7 @@ fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export DEBEMAIL="heckj@mac.com"
 export DEBFULLNAME="Joe Heck"
+export TEST_EMAIL_ADDRESS="joe.heck@sunlink.com"
 
 # borrowed from
 # http://stackoverflow.com/questions/18880024/start-ssh-agent-on-login
