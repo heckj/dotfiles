@@ -77,7 +77,7 @@ if [ -x /usr/local/bin/apm ]; then
 fi
 
 if [ -x /usr/local/bin/brew ]; then
-    brew update && brew upgrade && brew prune && brew cleanup
+    brew update && brew upgrade && brew cleanup
 fi
 
 if [ -x /usr/local/bin/heroku ]; then
