@@ -1,3 +1,4 @@
+# scripts and installs for doing debian packaging
 sudo pip install -U git-sweep
 # keystone development pieces...
 sudo apt-get install -y python-virtualenv python-dev libxslt1-dev

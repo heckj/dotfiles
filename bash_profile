@@ -43,26 +43,31 @@ fi
 export CLICOLOR=1
 export LSCOLORS=ExGxcxdxCxegedabagacad
 export EDITOR=/usr/bin/vim
-export PATH=/usr/local/bin:/usr/local/sbin:~/.ec2/bin:~/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+# EC2 bullshit
+if [ -d ~/.ec2/bin ]; then
+    export PATH="$PATH:$HOME/.ec2/bin"
+fi
+# RUBY
 if [ -d ~/.rvm/bin ]; then
     export PATH="$PATH:$HOME/.rvm/bin"
 fi
+# RUST
+if [ -d ~/.cargo/bin ]; then
+    export PATH="$PATH:$HOME/.cargo/bin"
+fi
+# Heroku
 if [ -d /usr/local/heroku/bin ]; then
     ### Added for he Heroku Toolbelt
     export PATH="/usr/local/heroku/bin:$PATH"
 fi
-
-if [ -d /usr/local/go/bin ]; then
-    export PATH="$PATH:/usr/local/go/bin"
-fi
-
+# GoLang
 mkdir -p ~/.go
 mkdir -p ~/.go/src
 mkdir -p ~/.go/pkg
 mkdir -p ~/.go/bin
 export GOPATH=~/.go
 export PATH="$PATH:$GOPATH/bin"
-export PATH="$HOME/.cargo/bin:$PATH"
 
 export MANPATH=$MANPATH:/opt/local/share/man
 if [ -s ~/bin/mvim ]; then
@@ -81,7 +86,6 @@ fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export DEBEMAIL="heckj@mac.com"
 export DEBFULLNAME="Joe Heck"
-export TEST_EMAIL_ADDRESS="joe.heck@sunlink.com"
 
 # borrowed from
 # http://stackoverflow.com/questions/18880024/start-ssh-agent-on-login

@@ -26,9 +26,9 @@ fi
 npm install -g eslint
 
 # Install python dev tools
-sudo pip3 install -U virtualenv
-sudo pip3 install -U pylint
-sudo pip3 install -U powerline-shell
+pip3 install --user --upgrade virtualenv
+pip3 install --user --upgrade pylint
+pip3 install --user --upgrade powerline-shell
 
 # Initialize and pull git submodules
 git submodule update --init --recursive
