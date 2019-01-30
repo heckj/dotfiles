@@ -84,6 +84,10 @@ if [ -x /usr/local/bin/heroku ]; then
   heroku update
 fi
 
+if [ -x $(which docker) ]; then
+  docker system prune --volumes -f
+fi
+
 force_sync ~/src/website
 force_sync ~/src/minikube
 force_sync $GOPATH/src/k8s.io/kubernetes
