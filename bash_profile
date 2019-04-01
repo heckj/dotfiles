@@ -115,6 +115,10 @@ export NVM_DIR=~/.nvm
 # to avoid using global js module installs...
 export PATH=node_modules/.bin:$PATH
 
+if [ -d ~/Library/Python/3.7/bin ]; then
+    export PATH=$PATH:~/Library/Python/3.7/bin
+fi
+
 if [ -f /usr/local/opt/nvm/nvm.sh ]; then
     source /usr/local/opt/nvm/nvm.sh
 fi
