@@ -1,6 +1,7 @@
 # increase number of open file handles allowed - 256 default
 ulimit -n 1024
 
+alias syncupstream="git fetch --all --prune; git merge upstream/master; git submodule update; git push origin master"
 # If not running interactively, don't do anything.
 [ -z "$PS1" ] && return
 
