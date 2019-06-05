@@ -16,7 +16,7 @@ elif [ `uname -s` == "Darwin" ]; then
     ssh-keyscan github.com
     brew install nvm
     brew install python3
-    brew install go
+    # brew install go
 else
     echo Unknown environment, exiting.
     exit
