@@ -41,6 +41,7 @@ function force_sync {
     cd $1
     git checkout master
     git reset --hard origin/master
+    git submodule update
     git fetch --all --prune
     git rebase upstream/master
     git push origin master
