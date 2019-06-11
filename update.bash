@@ -88,9 +88,7 @@ if [ -x $(which docker) ]; then
   docker system prune --volumes -f
 fi
 
-force_sync ~/src/website
-force_sync ~/src/minikube
-force_sync $GOPATH/src/k8s.io/kubernetes
+force_sync ~/src/NetNewsWire
 
 #git_clone_or_pull om heckj git@github.com:heckj/om.git
 #git_clone_or_pull t5 origin git@github.com:makhidkarun/t5.git
