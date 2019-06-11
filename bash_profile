@@ -49,10 +49,6 @@ export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 if [ -d ~/.ec2/bin ]; then
     export PATH="$PATH:$HOME/.ec2/bin"
 fi
-# RUBY
-if [ -d ~/.rvm/bin ]; then
-    export PATH="$PATH:$HOME/.rvm/bin"
-fi
 # RUST
 if [ -d ~/.cargo/bin ]; then
     export PATH="$PATH:$HOME/.cargo/bin"
@@ -84,7 +80,6 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
 fi
 
 # This loads RVM into a shell session.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export DEBEMAIL="heckj@mac.com"
 export DEBFULLNAME="Joe Heck"
 
@@ -141,3 +136,4 @@ if [ -f "${HOME}/bin/google-cloud-sdk/completion.bash.inc" ]; then source "${HOM
 if [ -d ~/.kube/plugins/jordanwilson230 ]; then
     export PATH=$PATH:~/.kube/plugins/jordanwilson230
 fi
+
