@@ -39,6 +39,7 @@ rm -f  $HOME/.bash_profile
 rm -f  $HOME/.bashrc
 rm -f  $HOME/.gitconfig
 rm -f  $HOME/.pylintrc
+rm -f  $HOME/.zshrc
 rm -f  $HOME/update.bash
 rm -f  $HOME/latest.bash
 rm -f  $HOME/provision_development_env.sh
@@ -53,6 +54,7 @@ ln -s `pwd`/gitconfig $HOME/.gitconfig
 ln -s `pwd`/update.bash $HOME/update.bash
 ln -s `pwd`/latest.bash $HOME/latest.bash
 ln -s `pwd`/pylintrc $HOME/.pylintrc
+ln -s `pwd`/zshrc $HOME/.zshrc
 ln -s `pwd`/provision_development_env.sh $HOME/provision_development_env.sh
 
 touch $HOME/.vim/bundle/vim-markdown/doc/foo
