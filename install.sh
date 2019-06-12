@@ -37,6 +37,7 @@ rm -rf $HOME/.vim $HOME/.vimrc $HOME/.gvimrc
 rm -f  $HOME/.screenrc
 rm -f  $HOME/.bash_profile
 rm -f  $HOME/.bashrc
+rm -f  $HOME/.gitignore_global
 rm -f  $HOME/.gitconfig
 rm -f  $HOME/.pylintrc
 rm -f  $HOME/.zshrc
@@ -51,6 +52,7 @@ ln -s `pwd`/screenrc $HOME/.screenrc
 ln -s `pwd`/bash_profile $HOME/.bash_profile
 ln -s `pwd`/bashrc $HOME/.bashrc
 ln -s `pwd`/gitconfig $HOME/.gitconfig
+ln -s `pwd`/gitignore_global $HOME/.gitignore_global
 ln -s `pwd`/update.bash $HOME/update.bash
 ln -s `pwd`/latest.bash $HOME/latest.bash
 ln -s `pwd`/pylintrc $HOME/.pylintrc

@@ -28,7 +28,7 @@
     smudge = git media smudge %f
 [core]
     autocrlf = input
-    excludesfile = /Users/heckj/.gitignore_global
+	excludesfile = /Users/heckj/.gitignore_global
 [url "https://"]
     insteadOf = git://
 [http]
