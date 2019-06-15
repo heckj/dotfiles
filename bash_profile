@@ -123,6 +123,10 @@ if [ -f /usr/local/bin/direnv ]; then
     eval "$(direnv hook bash)"
 fi
 
+if [ -f /usr/local/bin/rbenv ]; then
+    eval "$(rbenv init -)"
+fi
+
 if [ -d /usr/libexec/java_home/bin ]; then
     export JAVA_HOME=$(/usr/libexec/java_home)
 fi
