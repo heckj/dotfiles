@@ -141,3 +141,6 @@ if [ -d ~/.kube/plugins/jordanwilson230 ]; then
     export PATH=$PATH:~/.kube/plugins/jordanwilson230
 fi
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
