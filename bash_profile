@@ -136,11 +136,3 @@ if [ -f "${HOME}/bin/google-cloud-sdk/path.bash.inc" ]; then source "${HOME}/bin
 
 # The next line enables shell command completion for gcloud.
 if [ -f "${HOME}/bin/google-cloud-sdk/completion.bash.inc" ]; then source "${HOME}/bin/google-cloud-sdk/completion.bash.inc"; fi
-
-if [ -d ~/.kube/plugins/jordanwilson230 ]; then
-    export PATH=$PATH:~/.kube/plugins/jordanwilson230
-fi
-
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
