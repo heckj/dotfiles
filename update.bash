@@ -39,12 +39,12 @@ function force_sync {
   # DOES NOT ASK QUESTIONS, WILL KILL LOCAL WORK
   if [ -d $1/.git ]; then
     cd $1
-    git checkout master
-    git reset --hard origin/master
+    git checkout main
+    git reset --hard origin/main
     git submodule update
     git fetch --all --prune
-    git rebase upstream/master
-    git push origin master
+    git rebase upstream/main
+    git push origin main
     git gc
     git prune
 fi
