@@ -115,6 +115,10 @@ if [ -d ~/Library/Python/3.7/bin ]; then
     export PATH=$PATH:~/Library/Python/3.7/bin
 fi
 
+if [ -d ~/Library/Python/3.9/bin ]; then
+    export PATH=$PATH:~/Library/Python/3.9/bin
+fi
+
 if [ -f /usr/local/opt/nvm/nvm.sh ]; then
     source /usr/local/opt/nvm/nvm.sh
 fi
@@ -138,3 +142,4 @@ if [ -f "${HOME}/bin/google-cloud-sdk/path.bash.inc" ]; then source "${HOME}/bin
 if [ -f "${HOME}/bin/google-cloud-sdk/completion.bash.inc" ]; then source "${HOME}/bin/google-cloud-sdk/completion.bash.inc"; fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+

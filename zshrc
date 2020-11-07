@@ -103,6 +103,16 @@ export NVM_DIR="$HOME/.nvm"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Python local stuff
+if [ -d ~/Library/Python/3.7/bin ]; then
+    export PATH=$PATH:~/Library/Python/3.7/bin
+fi
+if [ -d ~/Library/Python/3.8/bin ]; then
+    export PATH=$PATH:~/Library/Python/3.8/bin
+fi
+if [ -d ~/Library/Python/3.9/bin ]; then
+    export PATH=$PATH:~/Library/Python/3.9/bin
+fi
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
