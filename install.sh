@@ -26,9 +26,10 @@ fi
 npm install -g eslint
 
 # Install python dev tools
-pip3 install --user --upgrade virtualenv
-pip3 install --user --upgrade pylint
-pip3 install --user --upgrade powerline-shell
+python3 -m pip install --user --upgrade pip
+python3 -m pip install --user --upgrade pylint
+python3 -m pip install --user --upgrade powerline-shell
+python3 -m pip install --user virtualenv
 
 # Initialize and pull git submodules
 git submodule update --init --recursive
@@ -56,6 +57,7 @@ ln -s `pwd`/gitignore_global $HOME/.gitignore_global
 ln -s `pwd`/update.bash $HOME/update.bash
 ln -s `pwd`/latest.bash $HOME/latest.bash
 ln -s `pwd`/pylintrc $HOME/.pylintrc
+ln -s `pwd`/lldbinit $HOME/.lldbinit
 ln -s `pwd`/zshrc $HOME/.zshrc
 ln -s `pwd`/provision_development_env.sh $HOME/provision_development_env.sh
 
