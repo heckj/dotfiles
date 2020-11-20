@@ -104,9 +104,6 @@ export NVM_DIR="$HOME/.nvm"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Python local stuff
-if [ -d ~/Library/Python/3.7/bin ]; then
-    export PATH=$PATH:~/Library/Python/3.7/bin
-fi
 if [ -d ~/Library/Python/3.8/bin ]; then
     export PATH=$PATH:~/Library/Python/3.8/bin
 fi
@@ -114,14 +111,15 @@ if [ -d ~/Library/Python/3.9/bin ]; then
     export PATH=$PATH:~/Library/Python/3.9/bin
 fi
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc'; fi
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# force Google Cloud to use Python3.8 because they can't be bothered to support 3.9
+export CLOUDSDK_PYTHON=/usr/local/bin/python3.8
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc'; fi
