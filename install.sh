@@ -14,9 +14,7 @@ if [ `uname -s` == "Linux" ]; then
 elif [ `uname -s` == "Darwin" ]; then
     brew install ctags ack
     ssh-keyscan github.com
-    brew install nvm
-    brew install python3
-    # brew install go
+    brew bundle
 else
     echo Unknown environment, exiting.
     exit
