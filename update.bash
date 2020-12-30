@@ -85,7 +85,7 @@ if [ -x /usr/local/bin/heroku ]; then
   heroku update
 fi
 
-if [ -x $(which docker) ]; then
+if [ -f /var/run/docker.sock ]; then
   docker system prune --volumes -f
 fi
 
