@@ -124,14 +124,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# force Google Cloud to use Python3.8 because they can't be bothered to support 3.9
-export CLOUDSDK_PYTHON=/usr/local/opt/python@3.8/bin/python3
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc'; fi
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/heckj/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -147,3 +139,11 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# force Google Cloud to use Python3.8 because they can't be bothered to support 3.9
+export CLOUDSDK_PYTHON=/opt/homebrew/opt/python@3.8/bin/python3
+# The next line updates PATH for the Google Cloud SDK.
+
+if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc'; fi
