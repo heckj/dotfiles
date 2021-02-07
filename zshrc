@@ -1,6 +1,14 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="/usr/local/sbin:$PATH"
+export PATH=$HOME/bin:$PATH
+
+# If an M1 specific homebrew is installed, prefer that to earlier homebrew in /usr/local/bin
+if [ -d /opt/homebrew/bin ]; then
+    export PATH=$PATH:/opt/homebrew/bin/
+fi
+# And extend with /usr/local/ command locations
+if [ -d /usr/local/bin ]; then
+    export PATH=$PATH:/usr/local/bin/:/usr/local/sbin
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

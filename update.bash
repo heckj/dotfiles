@@ -78,7 +78,13 @@ if [ -x /usr/local/bin/apm ]; then
 fi
 
 if [ -x /usr/local/bin/brew ]; then
-    brew update && brew upgrade && brew cleanup
+    echo "Updating original homebrew"
+    /usr/local/bin/brew update && /usr/local/bin/brew upgrade && /usr/local/bin/brew cleanup
+fi
+
+if [ -x /opt/homebrew/bin/brew ]; then
+    echo "Updating M1 homebrew"
+    /opt/homebrew/bin/brew update && /opt/homebrew/bin/brew upgrade && /opt/homebrew/bin/brew cleanup
 fi
 
 if [ -x /usr/local/bin/heroku ]; then

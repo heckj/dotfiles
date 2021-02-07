@@ -12,9 +12,8 @@ if [ `uname -s` == "Linux" ]; then
         ssh-keyscan github.com
     fi
 elif [ `uname -s` == "Darwin" ]; then
-    brew install ctags ack
-    ssh-keyscan github.com
     brew bundle
+    ssh-keyscan github.com
 else
     echo Unknown environment, exiting.
     exit
@@ -35,6 +34,7 @@ git submodule update --init --recursive
 rm -rf $HOME/.vim $HOME/.vimrc $HOME/.gvimrc
 rm -f  $HOME/.screenrc
 rm -f  $HOME/.bash_profile
+rm -f  $HOME/.zprofile
 rm -f  $HOME/.bashrc
 rm -f  $HOME/.gitignore_global
 rm -f  $HOME/.gitconfig
@@ -49,6 +49,7 @@ ln -s `pwd`/vim/vimrc $HOME/.vimrc
 ln -s `pwd`/vim/gvimrc $HOME/.gvimrc
 ln -s `pwd`/screenrc $HOME/.screenrc
 ln -s `pwd`/bash_profile $HOME/.bash_profile
+ln -s `pwd`/zprofile $HOME/.zprofile
 ln -s `pwd`/bashrc $HOME/.bashrc
 ln -s `pwd`/gitconfig $HOME/.gitconfig
 ln -s `pwd`/gitignore_global $HOME/.gitignore_global
