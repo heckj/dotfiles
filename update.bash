@@ -91,6 +91,10 @@ if [ -x /usr/local/bin/heroku ]; then
   heroku update
 fi
 
+if [ -d ~/opt/anaconda3 ]; then
+    conda update conda -y
+fi
+
 if [ -f /var/run/docker.sock ]; then
   docker system prune --volumes -f
 fi
