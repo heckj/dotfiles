@@ -10,6 +10,10 @@ if [ -d /usr/local/bin ]; then
     export PATH=$PATH:/usr/local/bin/:/usr/local/sbin
 fi
 
+if [ -f sendgrid.env ]; then
+    source sendgrid.env
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
