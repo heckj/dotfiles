@@ -155,3 +155,4 @@ if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc'; fi
+[[ :$PATH: == *:$HOME/bin:* ]] || PATH=$HOME/bin:$PATH
