@@ -81,7 +81,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize pip python osx ruby)
+plugins=(git colorize pip python macos ruby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -148,7 +148,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # force Google Cloud to use Python3.8 because they can't be bothered to support 3.9
-export CLOUDSDK_PYTHON=/opt/homebrew/opt/python@3.8/bin/python3
+export CLOUDSDK_PYTHON=/Users/heckj/opt/anaconda3/bin/python3
 # The next line updates PATH for the Google Cloud SDK.
 
 if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
