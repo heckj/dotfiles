@@ -144,3 +144,4 @@ if [ -f "${HOME}/bin/google-cloud-sdk/completion.bash.inc" ]; then source "${HOM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 [[ :$PATH: == *:$HOME/bin:* ]] || PATH=$HOME/bin:$PATH
+. "$HOME/.cargo/env"
