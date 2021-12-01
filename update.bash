@@ -95,6 +95,10 @@ if [ -d ~/opt/anaconda3 ]; then
     conda update conda -y
 fi
 
+if [ -x ~/.cargo/bin/rustup ]; then
+    rustup update
+fi
+
 if [ -f /var/run/docker.sock ]; then
   docker system prune --volumes -f
 fi
