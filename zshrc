@@ -123,6 +123,10 @@ if [ -d ~/Library/Python/3.9/bin ]; then
     export PATH=$PATH:~/Library/Python/3.9/bin
 fi
 
+if [ -d /opt/local/USD/bin ]; then
+    export PATH=$PATH:/opt/local/USD/bin
+    export PYTHONPATH=$PYTHONPATH:/opt/local/USD/lib/python
+fi
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 # Load rbenv automatically by appending
