@@ -115,18 +115,6 @@ export NVM_DIR="$HOME/.nvm"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Python local stuff
-if [ -d ~/Library/Python/3.8/bin ]; then
-    export PATH=$PATH:~/Library/Python/3.8/bin
-fi
-if [ -d ~/Library/Python/3.9/bin ]; then
-    export PATH=$PATH:~/Library/Python/3.9/bin
-fi
-
-if [ -d /opt/local/USD/bin ]; then
-    export PATH=$PATH:/opt/local/USD/bin
-    export PYTHONPATH=$PYTHONPATH:/opt/local/USD/lib/python
-fi
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 # Load rbenv automatically by appending
@@ -138,25 +126,35 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/heckj/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/heckj/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/heckj/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/heckj/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/heckj/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/Users/heckj/miniforge3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/heckj/opt/anaconda3/bin:$PATH"
+        export PATH="/Users/heckj/miniforge3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# force Google Cloud to use Python3.8 because they can't be bothered to support 3.9
-export CLOUDSDK_PYTHON=/Users/heckj/opt/anaconda3/bin/python3
-# The next line updates PATH for the Google Cloud SDK.
+#If you'd prefer that conda's base environment not be activated on startup,
+#   set the auto_activate_base parameter to false:
+#
+#conda config --set auto_activate_base false
 
+# force Google Cloud to use Python3.8 because they can't be bothered to support 3.9
+export CLOUDSDK_PYTHON=/Users/heckj/miniforge3/bin/python3
+
+# The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc'; fi
-[[ :$PATH: == *:$HOME/bin:* ]] || PATH=$HOME/bin:$PATH
+
+# USD Python local stuff
+if [ -d /opt/local/USD/bin ]; then
+    export PATH=$PATH:/opt/local/USD/bin
+    export PYTHONPATH=$PYTHONPATH:/opt/local/USD/lib/python
+fi
