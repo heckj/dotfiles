@@ -91,7 +91,7 @@ if [ -x /usr/local/bin/heroku ]; then
   heroku update
 fi
 
-if [ -d ~/miniforge3/bin/conda]; then
+if [ -d ~/miniforge3/bin/conda ]; then
     conda update conda -y
 fi
 
