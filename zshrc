@@ -120,7 +120,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Load rbenv automatically by appending
 # the following to ~/.zshrc:
 
-eval "$(rbenv init -)"
+[ -s "/opt/homebrew/bin/rbenv" ] && eval "$(rbenv init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
