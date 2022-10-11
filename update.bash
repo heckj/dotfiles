@@ -95,15 +95,15 @@ if [ -d ~/miniforge3/bin/conda ]; then
     conda update conda -y
 fi
 
-if [ -x ~/.cargo/bin/rustup ]; then
-    rustup update
-fi
+#if [ -x ~/.cargo/bin/rustup ]; then
+#    rustup update
+#fi
 
 if [ -f /var/run/docker.sock ]; then
   docker system prune --volumes -f
 fi
 
-force_sync ~/src/NetNewsWire
+#force_sync ~/src/NetNewsWire
 
 #git_clone_or_pull om heckj git@github.com:heckj/om.git
 #git_clone_or_pull t5 origin git@github.com:makhidkarun/t5.git
