@@ -95,6 +95,10 @@ if [ -d ~/miniforge3/bin/conda ]; then
     conda update conda -y
 fi
 
+if [ -x /usr/local/bin/tuist ]; then
+    tuist update
+fi
+
 #if [ -x ~/.cargo/bin/rustup ]; then
 #    rustup update
 #fi

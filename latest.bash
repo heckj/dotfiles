@@ -6,4 +6,3 @@ brew cleanup
 
 nvm install stable
 
-heroku update
