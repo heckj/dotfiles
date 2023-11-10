@@ -158,3 +158,8 @@ if [ -d /opt/local/USD/bin ]; then
     export PATH=$PATH:/opt/local/USD/bin
     export PYTHONPATH=$PYTHONPATH:/opt/local/USD/lib/python
 fi
+
+# pgAdmin4 CLI tooling (optional homebrew install)
+if [ -d '/Applications/pgAdmin 4.app/Contents/SharedSupport' ]; then
+    export PATH=$PATH:"/Applications/pgAdmin 4.app/Contents/SharedSupport"
+fi
