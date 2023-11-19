@@ -1,13 +1,13 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$PATH
 
-# If an M1 specific homebrew is installed, prefer that to earlier homebrew in /usr/local/bin
-if [ -d /opt/homebrew/bin ]; then
-    export PATH=$PATH:/opt/homebrew/bin/
-fi
+# If an M1 specific homebrew is installed, add that into the PATH
 # And extend with /usr/local/ command locations
 if [ -d /usr/local/bin ]; then
     export PATH=$PATH:/usr/local/bin/:/usr/local/sbin
+fi
+if [ -d /opt/homebrew/bin ]; then
+    export PATH=$PATH:/opt/homebrew/bin/
 fi
 
 if [ -f sendgrid.env ]; then
