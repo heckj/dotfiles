@@ -153,6 +153,10 @@ if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc'; fi
 
+if [ -f '/Users/heckj/.local/bin/mise' ]; then
+eval "$(/Users/heckj/.local/bin/mise activate zsh)"
+fi
+
 # USD Python local stuff
 if [ -d /opt/local/USD/bin ]; then
     export PATH=$PATH:/opt/local/USD/bin
