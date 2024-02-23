@@ -16,6 +16,7 @@
     oneline = log --prety=oneline
     la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
     alog = log --all --graph --date-order --decorate --pretty='format:%C(yellow)%h%Creset%C(red)%d%Creset %C(cyan)%an%Creset %ci %s'
+    dog = log --all --decorate --oneline --graph #this draws the graph.
     fulllog = log --graph --decorate=full --date=short
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     review = push gerrit HEAD:refs/for/master
