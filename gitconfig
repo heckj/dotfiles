@@ -13,7 +13,7 @@
     user = heckj
 [alias]
     st = status
-    oneline = log --prety=oneline
+    oneline = log --pretty=oneline
     la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
     alog = log --all --graph --date-order --decorate --pretty='format:%C(yellow)%h%Creset%C(red)%d%Creset %C(cyan)%an%Creset %ci %s'
     dog = log --all --decorate --oneline --graph #this draws the graph.
@@ -45,3 +45,9 @@
 	rebase = true
 [init]
 	defaultBranch = main
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
