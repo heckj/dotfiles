@@ -8,3 +8,4 @@ vim/vim/bundle/vim-taglist
 powerline-shell
 .vagrant
 *.log
+Brewfile.lock.json
