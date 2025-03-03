@@ -8,7 +8,7 @@ if [ `uname -s` == "Linux" ]; then
         sudo apt-get update
         sudo apt-get dist-upgrade -y
         sudo apt-get install -y tmux
-        sudo apt-get install -y vim-gnome exuberant-ctags ack-grep python3-pip
+        sudo apt-get install -y ripgrep python3-pip
         ssh-keyscan github.com
     fi
 elif [ `uname -s` == "Darwin" ]; then
@@ -31,7 +31,6 @@ python3 -m pip install --user virtualenv
 # Initialize and pull git submodules
 git submodule update --init --recursive
 
-rm -rf $HOME/.vim $HOME/.vimrc $HOME/.gvimrc
 rm -f  $HOME/.screenrc
 rm -f  $HOME/.bash_profile
 rm -f  $HOME/.zprofile
@@ -44,9 +43,6 @@ rm -f  $HOME/update.bash
 rm -f  $HOME/latest.bash
 rm -f  $HOME/provision_development_env.sh
 
-ln -s `pwd`/vim/vim $HOME/.vim
-ln -s `pwd`/vim/vimrc $HOME/.vimrc
-ln -s `pwd`/vim/gvimrc $HOME/.gvimrc
 ln -s `pwd`/screenrc $HOME/.screenrc
 ln -s `pwd`/bash_profile $HOME/.bash_profile
 ln -s `pwd`/zprofile $HOME/.zprofile
@@ -59,5 +55,3 @@ ln -s `pwd`/pylintrc $HOME/.pylintrc
 ln -s `pwd`/lldbinit $HOME/.lldbinit
 ln -s `pwd`/zshrc $HOME/.zshrc
 ln -s `pwd`/provision_development_env.sh $HOME/provision_development_env.sh
-
-touch $HOME/.vim/bundle/vim-markdown/doc/foo

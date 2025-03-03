@@ -9,12 +9,12 @@ function git_clone_or_pull {
   echo " ------------------------------------------------------------------ "
   echo "src/$1"
   if [ -d ~/src/$1/.git ]; then
-    cd ~/src/$1
+    cd ~/src/$1 || exit
     git remote -v
     git status
     git fetch --all --prune
   else
-    cd ~/src
+    cd ~/src || exit
     git clone --recursive -o $2 $3 $1
   fi
 }
@@ -25,7 +25,7 @@ function add_remote {
 # $3 == gitrepo
   echo " ------------------------------------------------------------------ "
   echo "src/$1"
-  cd ~/src/$1
+  cd ~/src/$1 || exit
   git remote -v
   git remote add $2 $3
   git fetch --all --prune
@@ -38,7 +38,7 @@ function force_sync {
   # named "upstream" with the upstream sources
   # DOES NOT ASK QUESTIONS, WILL KILL LOCAL WORK
   if [ -d $1/.git ]; then
-    cd $1
+    cd $1 || exit
     git checkout main
     git reset --hard origin/main
     git submodule update
@@ -57,15 +57,15 @@ echo " ======================================= "
 echo " ------------------------------------------------------------------ "
 echo "src/dotfiles"
 if [ -d ~/src/dotfiles/.git ]; then
-  cd ~/src/dotfiles
+  cd ~/src/dotfiles || exit
   git remote -v
   git status
   git pull origin master
   git fetch --all --prune
 else
-  cd ~/src
+  cd ~/src || exit
   git clone -o heckj git@github.com:heckj/dotfiles.git
-  cd dotfiles
+  cd dotfiles || exit
 fi
 
 if [ -x $HOME/bin/google-cloud-sdk/bin/gcloud ]; then
