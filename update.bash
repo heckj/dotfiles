@@ -60,7 +60,7 @@ if [ -d ~/src/dotfiles/.git ]; then
   cd ~/src/dotfiles || exit
   git remote -v
   git status
-  git pull origin master
+  git pull origin main
   git fetch --all --prune
 else
   cd ~/src || exit
