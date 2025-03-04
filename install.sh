@@ -39,11 +39,14 @@ rm -f  $HOME/.gitignore_global
 rm -f  $HOME/.gitconfig
 rm -f  $HOME/.pylintrc
 rm -f  $HOME/.zshrc
+rm -f  $HOME/.config/nvim
 rm -f  $HOME/update.bash
 rm -f  $HOME/latest.bash
 rm -f  $HOME/provision_development_env.sh
 
+mkdir -p $HOME/.config
 ln -s `pwd`/screenrc $HOME/.screenrc
+ln -s `pwd`/nvim/ $HOME/.config/nvim
 ln -s `pwd`/bash_profile $HOME/.bash_profile
 ln -s `pwd`/zprofile $HOME/.zprofile
 ln -s `pwd`/bashrc $HOME/.bashrc

@@ -1,10 +1,4 @@
-vim/vim/.netrwhist
-vim/vim/bundle/git
-vim/vim/bundle/nerdcomments
-vim/vim/bundle/nerdtree
-vim/vim/bundle/pydiction
-vim/vim/bundle/snipmate
-vim/vim/bundle/vim-taglist
+nvim/lazy-lock.json
 powerline-shell
 .vagrant
 *.log
