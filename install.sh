@@ -28,9 +28,6 @@ python3 -m pip install --user --upgrade pylint
 python3 -m pip install --user --upgrade powerline-shell
 python3 -m pip install --user virtualenv
 
-# Initialize and pull git submodules
-git submodule update --init --recursive
-
 rm -f  $HOME/.screenrc
 rm -f  $HOME/.bash_profile
 rm -f  $HOME/.zprofile
