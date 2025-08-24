@@ -7,4 +7,4 @@ fi
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
 # Added by swiftly
-. "/Users/heckj/.swiftly/env.sh" || :
+#. "/Users/heckj/.swiftly/env.sh" || :
