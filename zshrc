@@ -169,3 +169,8 @@ fi
 if [ -d '/Applications/pgAdmin 4.app/Contents/SharedSupport' ]; then
     export PATH=$PATH:"/Applications/pgAdmin 4.app/Contents/SharedSupport"
 fi
+
+# Added by Antigravity
+if [ -d '/Users/heckj/.antigravity/antigravity/bin' ]; then
+    export PATH="/Users/heckj/.antigravity/antigravity/bin:$PATH"
+fi
