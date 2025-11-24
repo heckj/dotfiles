@@ -126,28 +126,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/heckj/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/heckj/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/Users/heckj/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/heckj/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-#If you'd prefer that conda's base environment not be activated on startup,
-#   set the auto_activate_base parameter to false:
-#
-#conda config --set auto_activate_base false
-
 # force Google Cloud to use Python3.8 because they can't be bothered to support 3.9
-export CLOUDSDK_PYTHON=/Users/heckj/miniforge3/bin/python3
+export CLOUDSDK_PYTHON=/opt/homebrew/bin/python3
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
