@@ -126,23 +126,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# force Google Cloud to use Python3.8 because they can't be bothered to support 3.9
-export CLOUDSDK_PYTHON=/opt/homebrew/bin/python3
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc'; fi
-
 if [ -f '/Users/heckj/.local/bin/mise' ]; then
 eval "$(/Users/heckj/.local/bin/mise activate zsh)"
-fi
-
-# USD Python local stuff
-if [ -d /opt/local/USD/bin ]; then
-    export PATH=$PATH:/opt/local/USD/bin
-    export PYTHONPATH=$PYTHONPATH:/opt/local/USD/lib/python
 fi
 
 # pgAdmin4 CLI tooling (optional homebrew install)
@@ -154,3 +139,9 @@ fi
 if [ -d '/Users/heckj/.antigravity/antigravity/bin' ]; then
     export PATH="/Users/heckj/.antigravity/antigravity/bin:$PATH"
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/heckj/bin/google-cloud-sdk/completion.zsh.inc'; fi
